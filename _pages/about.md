@@ -19,12 +19,7 @@ profile:
   image_circular: false # crops the image to make it circular
 
   more_info: >
-
-    <p>School of Artificial Intelligence</p>
-
-    <p>University of Chinese Academy of Sciences</p>
-
-    <p>Beijing, China 101408</p>
+    <p>UCAS, Beijing</p>
 
 
 
@@ -56,7 +51,7 @@ latest_posts:
 
 
 
-I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Navigation (VLN). I am also exploring topics in Vision-Language-Action (VLA) models and AIGC.
+I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Navigation (VLN). I am currently exploring topics in Vision-Language-Action (VLA) models.
 
 
 
