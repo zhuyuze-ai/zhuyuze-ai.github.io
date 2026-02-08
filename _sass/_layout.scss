@@ -38,6 +38,11 @@ body.sticky-bottom-footer {
   img {
     width: 100%;
   }
+
+  // Larger profile picture on desktop, responsive on mobile
+  @media (min-width: 768px) {
+    width: 280px; // Increased from default ~200px for larger profile picture
+  }
 }
 
 // Content layout uses Bootstrap's grid system with responsive columns
