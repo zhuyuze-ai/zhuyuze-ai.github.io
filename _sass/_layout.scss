@@ -33,17 +33,7 @@ body.sticky-bottom-footer {
   max-width: v.$max-content-width;
 }
 
-// Profile
-.profile {
-  img {
-    width: 100%;
-  }
-
-  // Larger profile picture on desktop, responsive on mobile
-  @media (min-width: 768px) {
-    width: 280px; // Increased from default ~200px for larger profile picture
-  }
-}
+// Profile styles are defined in _components.scss
 
 // Content layout uses Bootstrap's grid system with responsive columns
 // Main content flows naturally through container-mt-5 and Bootstrap grid classes
