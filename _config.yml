@@ -2,14 +2,14 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: ZHUYUZE # the website title (if blank, full name will be used instead)
+title: Yuze Zhu (朱昱泽) # the website title (if blank, full name will be used instead)
 first_name: Yuze
 middle_name:
 last_name: Zhu
 contact_note: >
-  WWWelcome to contact me with Email!
+  Welcome to contact me via Email!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Yuze Zhu's personal academic homepage. Research interests include Embodied AI and Vision-Language Navigation (VLN).
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.

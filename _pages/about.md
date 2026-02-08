@@ -13,7 +13,7 @@ profile:
     <p>University of Chinese Academy of Sciences</p>
     <p>Beijing, China 101408</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # temporarily disabled to debug build error
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -27,6 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests include Embodied AI and Vision-Language Navigation (VLN).
+I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Navigation (VLN). I am also exploring topics in Vision-Language-Action (VLA) models and AIGC.
 
-I am passionate about building intelligent agents that can understand and interact with the physical world through natural language. Feel free to reach out if you are interested in collaboration or have any questions!
+Beyond research, I am a passionate photographer. I enjoy scouting for the perfect photo spots on RedNote (Xiaohongshu), capturing both scenic landscapes and portraits.
+
+I am eager to make friends from all around the world. If you are looking for a friend from China to exchange ideas with—whether about academic research, daily life, or cultural topics—please feel free to reach out. I welcome emails from everyone!
+
+While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
