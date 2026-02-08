@@ -29,8 +29,8 @@ latest_posts:
 
 I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Navigation (VLN). I am also exploring topics in Vision-Language-Action (VLA) models and AIGC.
 
-Beyond research, I am a passionate photographer. I enjoy scouting for the perfect photo spots on RedNote (Xiaohongshu), capturing both scenic landscapes and portraits.
+Beyond research, I am a passionate photographer. I enjoy scouting for the perfect photo spots on RedNote across different cities, capturing both scenic landscapes and portraits.
 
-I am eager to make friends from all around the world. If you are looking for a friend from China to exchange ideas with—whether about academic research, daily life, or cultural topics—please feel free to reach out. I welcome emails from everyone!
+I am eager to make friends from all around the world. If you are looking for a friend from Hangzhou, China to exchange ideas with—whether about academic research, daily life, or cultural topics—please feel free to reach out. I welcome emails from everyone!
 
 While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
