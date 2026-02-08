@@ -12,7 +12,7 @@ subtitle: <a href='https://ai.ucas.ac.cn/'>School of Artificial Intelligence, UC
 
 profile:
 
-  align: left
+  align: right
 
   image: prof_pic.jpg
 
@@ -59,7 +59,7 @@ Beyond research, I am a passionate photographer. I enjoy scouting for the perfec
 
 
 
-I am eager to make friends from all around the world. If you are looking for a friend from Hangzhou, China to exchange ideas with—whether about academic research, daily life, or cultural topics—please feel free to reach out. I welcome emails from everyone!
+I am eager to make friends from all around the world. If you are looking for a friend from Hangzhou, China to exchange ideas with—whether about academic research, daily life, or cultural topics—please feel free to [reach out to me](mailto:zhuyuze23@mails.ucas.ac.cn). I welcome emails from everyone!
 
 
 
