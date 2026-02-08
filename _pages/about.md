@@ -19,9 +19,6 @@ profile:
   image_circular: false # crops the image to make it circular
 
   more_info: >
-    <p>School of Artificial Intelligence</p>
-    <p>UCAS</p>
-    <p>Beijing, China</p>
     <div class="social">
     <div class="contact-icons">
     <a href="mailto:zhuyuze23@mails.ucas.ac.cn" title="email"><i class="fas fa-envelope"></i></a>
