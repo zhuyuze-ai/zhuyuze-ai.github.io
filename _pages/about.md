@@ -13,7 +13,7 @@ profile:
     <p>University of Chinese Academy of Sciences</p>
     <p>Beijing, China 101408</p>
 
-selected_papers: false # temporarily disabled to debug build error
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:

@@ -6,6 +6,7 @@ title: Yuze Zhu (朱昱泽) # the website title (if blank, full name will be use
 first_name: Yuze
 middle_name:
 last_name: Zhu
+email: zhuyuze23@mails.ucas.ac.cn # Required! Template splits this for validation
 contact_note: >
   Welcome to contact me via Email!
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
