@@ -19,12 +19,10 @@ profile:
   image_circular: false # crops the image to make it circular
 
   more_info: >
-    <div class="social">
     <div class="contact-icons">
     <a href="mailto:zhuyuze23@mails.ucas.ac.cn" title="email"><i class="fas fa-envelope"></i></a>
     <a href="https://github.com/zhuyuze-ai" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
     <a href="https://scholar.google.com" title="Google Scholar" target="_blank"><i class="ai ai-google-scholar"></i></a>
-    </div>
     </div>
 
 
