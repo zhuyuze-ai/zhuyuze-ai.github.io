@@ -4,7 +4,7 @@ cv:
   email: zhuyuze23@mails.ucas.ac.cn
   location: Beijing, China
   image: ""
-  summary: A junior undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), with research interests in Embodied AI and Vision-Language Navigation.
+  summary: A junior undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), with research interests in Embodied AI and Vision-Language Action.
 
   social_networks:
     - network: GitHub
@@ -26,20 +26,24 @@ cv:
         studyType: Bachelor
         start_date: 2023
         end_date: 2027
-        score: ""
+        score: "GPA: 3.89/4.0, Rank: 10/85"
         courses: ""
         highlights:
           - School of Artificial Intelligence
-          - Research focus on Embodied AI and Vision-Language Navigation
+          - Research focus on Embodied AI
 
     Experience:
-      - company: ""
-        position: ""
-        location: ""
-        start_date: ""
-        end_date: ""
-        summary: ""
-        highlights: []
+      - company: Institute of Automation, Chinese Academy of Sciences (CASIA)
+        position: Research Intern
+        location: Beijing, China
+        start_date: "2025-07"
+        end_date: "2026-01"
+        summary: "State Key Laboratory of Multimodal Artificial Intelligence Systems. Supervised by Prof. Junyu Gao and Prof. Changsheng Xu."
+        highlights:
+          - "Conducted research on Vision-Language Navigation (VLN), focusing on self correction."
+          - "Proposed a novel framework to enhance the agent's navigation capabilities in unseen environments."
+          - "Completed the full research cycle including idea proposal, baseline reproduction (PyTorch), and manuscript writing."
+          - "Outcome: One paper submitted to ICML 2026 (Under Review)."
 
     Awards:
       - title: ""
@@ -50,19 +54,23 @@ cv:
         summary: ""
 
     Publications:
-      - title: ""
+      - title: "[Title Anonymized for Double-Blind Review]"
         authors:
+          - Xuan Yao
           - Yuze Zhu
-        publisher: ""
-        releaseDate: ""
+          - Junyu Gao
+          - Zongmeng Wang
+          - Changsheng Xu
+        publisher: "Submitted to ICML 2026"
+        releaseDate: "2026-01"
         url: ""
-        summary: ""
+        summary: "A study on Vision-Language Navigation. The specific title and abstract are omitted to comply with the double-blind review policy of ICML."
 
     Skills:
       - name: Machine Learning
         level: ""
         icon: fa-solid fa-hashtag
-        keywords: "Deep Learning, Computer Vision, Natural Language Processing, Reinforcement Learning"
+        keywords: "Deep Learning, Computer Vision, Embodied AI"
 
       - name: Programming
         level: ""
@@ -79,7 +87,7 @@ cv:
     Interests:
       - name: Artificial Intelligence
         icon: fa-solid fa-robot
-        keywords: "Embodied AI, Vision-Language Navigation, Robotics"
+        keywords: "Embodied AI, Vision-Language Action, Robotics"
 
     Certificates:
       - name: ""
