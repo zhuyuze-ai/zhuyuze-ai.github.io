@@ -9,7 +9,7 @@ ul.task-list {
   /* Remove bullets from all levels */
 }
 
-ul.task-list>li ul {
+ul.task-list > li ul {
   /* Nested lists within .task-list */
   padding-inline-start: 1.5rem;
 }
@@ -246,7 +246,7 @@ ul.task-list input[type="checkbox"] {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-.wechat-modal>img {
+.wechat-modal > img {
   display: block;
   position: relative;
   top: 50%;
@@ -257,7 +257,7 @@ ul.task-list input[type="checkbox"] {
 }
 
 @media only screen and (max-width: 400px) {
-  .wechat-modal>img {
+  .wechat-modal > img {
     width: 100%;
   }
 }

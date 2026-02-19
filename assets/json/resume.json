@@ -1,94 +1,78 @@
 {
-    "basics": {
-        "name": "Yuze Zhu",
-        "label": "AI Researcher",
-        "image": "",
-        "email": "zhuyuze23@mails.ucas.ac.cn",
-        "phone": "",
-        "summary": "A junior undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), with research interests in Embodied AI and Vision-Language Navigation.",
-        "location": {
-            "address": "",
-            "postalCode": "",
-            "city": "Beijing",
-            "countryCode": "CN",
-            "region": ""
-        },
-        "profiles": [
-            {
-                "network": "GitHub",
-                "username": "sunrise-ikun",
-                "url": "https://github.com/sunrise-ikun"
-            }
-        ]
+  "basics": {
+    "name": "Yuze Zhu",
+    "label": "AI Researcher",
+    "image": "",
+    "email": "zhuyuze23@mails.ucas.ac.cn",
+    "phone": "",
+    "summary": "A junior undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), with research interests in Embodied AI and Vision-Language Navigation.",
+    "location": {
+      "address": "",
+      "postalCode": "",
+      "city": "Beijing",
+      "countryCode": "CN",
+      "region": ""
     },
-    "work": [],
-    "volunteer": [],
-    "education": [
-        {
-            "institution": "University of Chinese Academy of Sciences (UCAS)",
-            "location": "Beijing, China",
-            "url": "https://ai.ucas.ac.cn/",
-            "area": "Artificial Intelligence",
-            "studyType": "Bachelor",
-            "startDate": "2023-09-01",
-            "endDate": "2027-06-01",
-            "score": "",
-            "courses": [],
-            "highlights": [
-                "School of Artificial Intelligence",
-                "Research focus on Embodied AI and Vision-Language Navigation"
-            ]
-        }
-    ],
-    "awards": [],
-    "certificates": [],
-    "publications": [],
-    "skills": [
-        {
-            "name": "Machine Learning",
-            "level": "",
-            "icon": "fa-solid fa-hashtag",
-            "keywords": [
-                "Deep Learning",
-                "Computer Vision",
-                "Natural Language Processing",
-                "Reinforcement Learning"
-            ]
-        },
-        {
-            "name": "Programming",
-            "level": "",
-            "icon": "fa-solid fa-code",
-            "keywords": [
-                "Python",
-                "PyTorch",
-                "C/C++"
-            ]
-        }
-    ],
-    "languages": [
-        {
-            "language": "Chinese",
-            "fluency": "Native speaker",
-            "icon": ""
-        },
-        {
-            "language": "English",
-            "fluency": "Fluent",
-            "icon": ""
-        }
-    ],
-    "interests": [
-        {
-            "name": "Artificial Intelligence",
-            "icon": "fa-solid fa-robot",
-            "keywords": [
-                "Embodied AI",
-                "Vision-Language Navigation",
-                "Robotics"
-            ]
-        }
-    ],
-    "references": [],
-    "projects": []
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "sunrise-ikun",
+        "url": "https://github.com/sunrise-ikun"
+      }
+    ]
+  },
+  "work": [],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "University of Chinese Academy of Sciences (UCAS)",
+      "location": "Beijing, China",
+      "url": "https://ai.ucas.ac.cn/",
+      "area": "Artificial Intelligence",
+      "studyType": "Bachelor",
+      "startDate": "2023-09-01",
+      "endDate": "2027-06-01",
+      "score": "",
+      "courses": [],
+      "highlights": ["School of Artificial Intelligence", "Research focus on Embodied AI and Vision-Language Navigation"]
+    }
+  ],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Machine Learning",
+      "level": "",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": ["Deep Learning", "Computer Vision", "Natural Language Processing", "Reinforcement Learning"]
+    },
+    {
+      "name": "Programming",
+      "level": "",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "PyTorch", "C/C++"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Chinese",
+      "fluency": "Native speaker",
+      "icon": ""
+    },
+    {
+      "language": "English",
+      "fluency": "Fluent",
+      "icon": ""
+    }
+  ],
+  "interests": [
+    {
+      "name": "Artificial Intelligence",
+      "icon": "fa-solid fa-robot",
+      "keywords": ["Embodied AI", "Vision-Language Navigation", "Robotics"]
+    }
+  ],
+  "references": [],
+  "projects": []
 }
