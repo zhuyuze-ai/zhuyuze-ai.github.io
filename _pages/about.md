@@ -47,3 +47,17 @@ Beyond research, I am a passionate photographer. I enjoy scouting for the perfec
 I am eager to make friends from all around the world. If you are looking for a friend from Hangzhou, China to exchange ideas with—whether about academic research, daily life, or cultural topics—please feel free to [reach out to me](mailto:zhuyuze23@mails.ucas.ac.cn). I welcome emails from everyone!
 
 While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
+
+---
+
+## experience
+
+**Embodied AI Algorithm Research Intern** &nbsp;·&nbsp; [FiveAges (中科第五纪)](https://www.fiveages.com.cn/) &nbsp;·&nbsp; *Mar 2026 – Present*
+<br>
+Working on embodied intelligence algorithms, with a focus on **Vision-Language-Action (VLA)** models and bridging academic research with real-world robotic deployment.
+
+**Research Intern** &nbsp;·&nbsp; [State Key Laboratory of Multimodal AI Systems, CASIA](http://www.ia.cas.cn/) &nbsp;·&nbsp; *Jul 2025 – Jan 2026*
+<br>
+Supervised by Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on **Vision-Language Navigation (VLN)** with a focus on self-correction. Led the full research cycle from idea proposal and baseline reproduction (PyTorch) to manuscript writing — one paper submitted to **ICML 2026** (under review).
+
+<p style="text-align:right; margin-top:0.5em;"><a href="{{ '/cv/' | relative_url }}">→ full CV</a></p>

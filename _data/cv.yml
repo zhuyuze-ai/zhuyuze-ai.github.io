@@ -34,7 +34,7 @@ cv:
 
     Experience:
       - company: FiveAges (中科第五纪)
-        position: Embodied AI Algorithm Intern
+        position: Embodied AI Algorithm Research Intern
         location: Beijing, China
         start_date: "2026-03"
         end_date: "Present"
@@ -42,12 +42,12 @@ cv:
         highlights:
           - "Research and development on Embodied AI algorithms, including Vision-Language-Action (VLA) models."
 
-      - company: Institute of Automation, Chinese Academy of Sciences (CASIA)
+      - company: State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of Automation, Chinese Academy of Sciences (CASIA)
         position: Research Intern
         location: Beijing, China
         start_date: "2025-07"
         end_date: "2026-01"
-        summary: "State Key Laboratory of Multimodal Artificial Intelligence Systems. Supervised by Prof. Junyu Gao and Prof. Changsheng Xu."
+        summary: "Supervised by Prof. Junyu Gao and Prof. Changsheng Xu."
         highlights:
           - "Conducted research on Vision-Language Navigation (VLN), focusing on self correction."
           - "Proposed a novel framework to enhance the agent's navigation capabilities in unseen environments."
