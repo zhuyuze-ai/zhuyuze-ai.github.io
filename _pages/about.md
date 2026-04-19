@@ -42,9 +42,7 @@ latest_posts:
 
 I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Action (VLA).
 
-Beyond research, I am a passionate photographer. I enjoy scouting for the perfect photo spots on RedNote across different cities, capturing both scenic landscapes and portraits.
-
-Born and raised in **Hangzhou**, now based in **Beijing** for my studies and research — living between the poetic south and the bold north of China.
+Beyond research, I am a passionate photographer. Born and raised in **Hangzhou** and now based in **Beijing** for my studies and research, I find myself living between the poetic south and the bold north of China — a contrast that keeps inspiring me to scout for the perfect photo spots on RedNote across different cities, capturing both scenic landscapes and portraits.
 
 I am always happy to meet friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese—especially if you are curious about Hangzhou or Beijing—please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
 
@@ -56,19 +54,19 @@ While this page is just a starting point, I aim to continuously enrich it as I g
   <article class="exp-card">
     <div class="exp-meta">
       <span class="exp-date">Mar 2026 – Present</span>
-      <span class="exp-loc">Beijing, China</span>
+      <span class="exp-loc">Haidian, Beijing</span>
     </div>
     <h3 class="exp-title">Embodied AI Algorithm Research Intern</h3>
     <div class="exp-org">FiveAges (中科第五纪)</div>
     <p class="exp-desc">
-      Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
+      Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
     </p>
   </article>
 
   <article class="exp-card">
     <div class="exp-meta">
       <span class="exp-date">Jul 2025 – Jan 2026</span>
-      <span class="exp-loc">Beijing, China</span>
+      <span class="exp-loc">Haidian, Beijing</span>
     </div>
     <h3 class="exp-title">Research Intern</h3>
     <div class="exp-org"><a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a></div>
