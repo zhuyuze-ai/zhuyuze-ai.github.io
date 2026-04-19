@@ -26,13 +26,22 @@ cv:
         studyType: Bachelor
         start_date: 2023
         end_date: 2027
-        score: "GPA: 3.89/4.0, Rank: 10/85"
+        score: "GPA: 3.87/4.0, Rank: 12/85"
         courses: ""
         highlights:
           - School of Artificial Intelligence
           - Research focus on Embodied AI
 
     Experience:
+      - company: FiveAges (中科第五纪)
+        position: Embodied AI Algorithm Intern
+        location: Beijing, China
+        start_date: "2026-03"
+        end_date: "Present"
+        summary: "Working as an algorithm intern on embodied intelligence, focusing on the development and deployment of AI models for real-world robotic systems."
+        highlights:
+          - "Research and development on Embodied AI algorithms, including Vision-Language-Action (VLA) models."
+
       - company: Institute of Automation, Chinese Academy of Sciences (CASIA)
         position: Research Intern
         location: Beijing, China
