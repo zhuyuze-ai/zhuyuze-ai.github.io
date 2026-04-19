@@ -51,6 +51,37 @@ html[data-theme="dark"] body::before {
 }
 
 /* ---------------------------------------------------------------------------
+ * Profile image — thin HUD-style ring + soft theme-colour glow.
+ * Applies only on the about page, through the `.profile` wrapper.
+ * ------------------------------------------------------------------------- */
+.profile img {
+  border-radius: 6px;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--global-theme-color) 45%, transparent),
+    0 0 24px -6px color-mix(in srgb, var(--global-theme-color) 55%, transparent);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.profile img:hover {
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--global-theme-color) 70%, transparent),
+    0 0 32px -4px color-mix(in srgb, var(--global-theme-color) 75%, transparent);
+  transform: translateY(-1px);
+}
+
+/* Sci-fi accent on contact icons inside the profile block */
+.profile .contact-icons a {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.profile .contact-icons a:hover {
+  color: var(--global-theme-color);
+  transform: translateY(-1px);
+}
+
+/* ---------------------------------------------------------------------------
  * Section headings on the homepage (news, experience, selected publications)
  * Small accent bar + lowercase label, consistent with the theme style.
  * ------------------------------------------------------------------------- */

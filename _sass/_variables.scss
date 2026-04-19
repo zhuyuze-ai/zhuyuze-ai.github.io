@@ -20,6 +20,11 @@ $green-color-light: #ddffdd !default;
 $green-color-bright: #11d68b !default;
 $purple-color: #b509ac !default;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
+
+// Sci-fi light blue palette — used as the default theme accent.
+$sci-blue-color: #0ea5e9 !default; // sky-500: primary accent on light backgrounds
+$sci-blue-color-light: #38bdf8 !default; // sky-400: primary accent on dark backgrounds
+$sci-blue-color-dark: #0369a1 !default; // sky-700: reserved for strong emphasis
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
@@ -34,7 +39,7 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($purple-color, 0.05);
+$code-bg-color-light: rgba($sci-blue-color, 0.06);
 $code-bg-color-dark: #2c3237 !default;
 
 // Font awesome location

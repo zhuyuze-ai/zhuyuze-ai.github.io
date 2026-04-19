@@ -40,11 +40,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Navigation (VLN). I am currently exploring topics in Vision-Language-Action (VLA) models.
+I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Action (VLA).
 
 Beyond research, I am a passionate photographer. I enjoy scouting for the perfect photo spots on RedNote across different cities, capturing both scenic landscapes and portraits.
 
-I am eager to make friends from all around the world. If you are looking for a friend from Hangzhou, China to exchange ideas with—whether about academic research, daily life, or cultural topics—please feel free to [reach out to me](mailto:zhuyuze23@mails.ucas.ac.cn). I welcome emails from everyone!
+Born and raised in **Hangzhou**, now based in **Beijing** for my studies and research — living between the poetic south and the bold north of China.
+
+I am always happy to meet friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese—especially if you are curious about Hangzhou or Beijing—please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
 
 While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
 
@@ -57,7 +59,7 @@ While this page is just a starting point, I aim to continuously enrich it as I g
       <span class="exp-loc">Beijing, China</span>
     </div>
     <h3 class="exp-title">Embodied AI Algorithm Research Intern</h3>
-    <div class="exp-org"><a href="https://www.fiveages.com.cn/" target="_blank" rel="noopener">FiveAges (中科第五纪)</a></div>
+    <div class="exp-org">FiveAges (中科第五纪)</div>
     <p class="exp-desc">
       Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
     </p>
