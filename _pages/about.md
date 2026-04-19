@@ -48,16 +48,34 @@ I am eager to make friends from all around the world. If you are looking for a f
 
 While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
 
----
+<h2 class="home-section-title">experience</h2>
 
-## experience
+<div class="home-experience">
+  <article class="exp-card">
+    <div class="exp-meta">
+      <span class="exp-date">Mar 2026 – Present</span>
+      <span class="exp-loc">Beijing, China</span>
+    </div>
+    <h3 class="exp-title">Embodied AI Algorithm Research Intern</h3>
+    <div class="exp-org"><a href="https://www.fiveages.com.cn/" target="_blank" rel="noopener">FiveAges (中科第五纪)</a></div>
+    <p class="exp-desc">
+      Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
+    </p>
+  </article>
 
-**Embodied AI Algorithm Research Intern** &nbsp;·&nbsp; [FiveAges (中科第五纪)](https://www.fiveages.com.cn/) &nbsp;·&nbsp; *Mar 2026 – Present*
-<br>
-Working on embodied intelligence algorithms, with a focus on **Vision-Language-Action (VLA)** models and bridging academic research with real-world robotic deployment.
+  <article class="exp-card">
+    <div class="exp-meta">
+      <span class="exp-date">Jul 2025 – Jan 2026</span>
+      <span class="exp-loc">Beijing, China</span>
+    </div>
+    <h3 class="exp-title">Research Intern</h3>
+    <div class="exp-org"><a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a></div>
+    <p class="exp-desc">
+      Supervised by Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction. Led the full research cycle from idea proposal and baseline reproduction (PyTorch) to manuscript writing — one paper submitted to <strong>ICML 2026</strong> (under review).
+    </p>
+  </article>
+</div>
 
-**Research Intern** &nbsp;·&nbsp; [State Key Laboratory of Multimodal AI Systems, CASIA](http://www.ia.cas.cn/) &nbsp;·&nbsp; *Jul 2025 – Jan 2026*
-<br>
-Supervised by Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on **Vision-Language Navigation (VLN)** with a focus on self-correction. Led the full research cycle from idea proposal and baseline reproduction (PyTorch) to manuscript writing — one paper submitted to **ICML 2026** (under review).
-
-<p style="text-align:right; margin-top:0.5em;"><a href="{{ '/cv/' | relative_url }}">→ full CV</a></p>
+<div class="home-experience-footer">
+  <a href="{{ '/cv/' | relative_url }}">→ full CV</a>
+</div>
