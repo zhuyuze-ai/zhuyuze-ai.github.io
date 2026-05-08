@@ -390,7 +390,7 @@ ninja.data = [{
           section: "News",},{id: "news-started-my-internship-at-fiveages-中科第五纪-as-an-embodied-ai-algorithm-intern",
           title: 'Started my internship at FiveAges (中科第五纪) as an Embodied AI Algorithm Intern.',
           description: "",
-          section: "News",},{id: "news-our-paper-sc-wm-a-self-correcting-world-model-with-closed-loop-feedback-for-vision-and-language-navigation-in-continuous-environments-has-been-accepted-by-icml-2026-grateful-to-all-co-authors-and-supervisors",
+          section: "News",},{id: "news-our-paper-sc-wm-a-self-correcting-world-model-with-closed-loop-feedback-for-vision-and-language-navigation-in-continuous-environments-has-been-accepted-by-icml-2026",
           title: 'Our paper “SC²-WM: A Self-Correcting World Model with Closed-Loop Feedback for Vision-and-Language Navigation...',
           description: "",
           section: "News",},{id: "projects-project-1",
