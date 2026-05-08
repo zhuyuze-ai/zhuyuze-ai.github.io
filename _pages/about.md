@@ -80,9 +80,9 @@ While this page is just a starting point, I aim to continuously enrich it as I g
   <a href="{{ '/cv/' | relative_url }}">→ full CV</a>
 </div>
 
-<!-- ClustrMaps visitor tracking (image version for better compatibility) -->
-<div style="max-width: 320px; margin: 2rem auto; text-align: center;">
-  <a href="https://clustrmaps.com/site/1c9y5" title="ClustrMaps">
-    <img src="//www.clustrmaps.com/map_v2.png?d=Wa0CdcdQPLR1BOMxnlXprXWutKfJKixCrENeVr9Ok2Q&cl=ffffff" style="max-width: 100%;" alt="ClustrMaps visitor map" />
+<!-- ClustrMaps visitor tracking -->
+<div style="margin: 4rem auto 1rem; text-align: center; opacity: 0.9;">
+  <a href="https://clustrmaps.com/site/1c9y5" title="ClustrMaps" style="display: inline-block;">
+    <img src="//www.clustrmaps.com/map_v2.png?d=Wa0CdcdQPLR1BOMxnlXprXWutKfJKixCrENeVr9Ok2Q&cl=aaaaaa&w=500&co=0d0d0d&cmn=1a1a2e&ct=666666" style="max-width: 100%; border-radius: 8px;" alt="ClustrMaps visitor map" />
   </a>
 </div>
