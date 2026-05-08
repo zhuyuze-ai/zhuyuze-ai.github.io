@@ -79,3 +79,8 @@ While this page is just a starting point, I aim to continuously enrich it as I g
 <div class="home-experience-footer">
   <a href="{{ '/cv/' | relative_url }}">→ full CV</a>
 </div>
+
+<!-- ClustrMaps visitor tracking -->
+<div style="max-width: 320px; margin: 2rem auto; text-align: center;">
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Wa0CdcdQPLR1BOMxnlXprXWutKfJKixCrENeVr9Ok2Q&cl=ffffff&w=a"></script>
+</div>
