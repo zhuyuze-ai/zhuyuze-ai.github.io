@@ -2,7 +2,8 @@ cv:
   name: Yuze Zhu
   label: AI Researcher
   email: zhuyuze23@mails.ucas.ac.cn
-  location: Beijing, China
+  phone: "+86 155-5712-1756"
+  location: Beijing, China, 101408
   image: ""
   summary: A junior undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), with research interests in Embodied AI and Vision-Language Action.
 
@@ -14,7 +15,7 @@ cv:
     street: ""
     city: Beijing
     region: ""
-    postalCode: ""
+    postalCode: "101408"
     countryCode: CN
 
   sections:
@@ -23,75 +24,88 @@ cv:
         location: Beijing, China
         url: https://ai.ucas.ac.cn/
         area: Artificial Intelligence
-        studyType: Bachelor
-        start_date: 2023
-        end_date: 2027
-        score: "GPA: 3.87/4.0, Rank: 12/85"
-        courses: ""
+        studyType: B.Eng.
+        start_date: 2023-09
+        end_date: 2027-07 (Expected)
+        score: "GPA: 3.87/4.0, Rank: 12/85 (Top 15%)"
+        courses: "Computer Vision, Natural Language Processing, Robotics (Seminar), Pattern Recognition, Data Structures"
         highlights:
           - School of Artificial Intelligence
           - Research focus on Embodied AI
 
     Experience:
       - company: FiveAges (中科第五纪)
-        position: Embodied AI Algorithm Research Intern
+        position: Embodied AI Algorithm Intern
         location: Beijing, China
         start_date: "2026-03"
         end_date: "Present"
-        summary: "Working as an algorithm intern on embodied intelligence, focusing on the development and deployment of AI models for real-world robotic systems."
+        summary: "Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms."
         highlights:
-          - "Research and development on Embodied AI algorithms, including Vision-Language-Action (VLA) models."
+          - "Research on Vision-Language-Action (VLA) models."
+          - "Contributing to VLA model development and deployment on real-world robotic systems, bridging academic research with industrial applications."
 
-      - company: State Key Laboratory of Multimodal Artificial Intelligence Systems, Institute of Automation, Chinese Academy of Sciences (CASIA)
+      - company: Institute of Automation, Chinese Academy of Sciences (CASIA)
         position: Research Intern
         location: Beijing, China
         start_date: "2025-07"
         end_date: "2026-01"
-        summary: "Supervised by Prof. Junyu Gao and Prof. Changsheng Xu."
+        summary: "State Key Laboratory of Multimodal Artificial Intelligence Systems. Supervised by Assoc. Prof. Junyu Gao and Prof. Changsheng Xu."
         highlights:
-          - "Conducted research on Vision-Language Navigation (VLN), focusing on self correction."
-          - "Proposed a novel framework to enhance the agent's navigation capabilities in unseen environments."
-          - "Completed the full research cycle including idea proposal, baseline reproduction (PyTorch), and manuscript writing."
-          - "Outcome: One paper submitted to ICML 2026 (Under Review)."
+          - "Conducted research on Vision-Language Navigation (VLN), focusing on self-correction mechanisms."
+          - "Proposed a novel dynamic path correction framework based on environmental feedback."
+          - "Independently developed the main experimental codebase, conducted data analysis and ablation studies."
+          - "Extensive comparative experiments on R2R-CE and RxR-CE continuous environment datasets."
+          - "Outcome: Co-authored a paper (second author), accepted by ICML 2026."
 
     Awards:
-      - title: ""
-        authors: []
-        date: ""
-        awarder: ""
-        url: ""
-        summary: ""
+      - title: "Second Prize Undergraduate Excellent Scholarship"
+        date: "2024"
+        awarder: "University of Chinese Academy of Sciences"
+        summary: "Top 15% in Comprehensive Evaluation"
+
+      - title: "Merit Student"
+        date: "2024"
+        awarder: "University of Chinese Academy of Sciences"
+
+      - title: "Merit Student"
+        date: "2023"
+        awarder: "University of Chinese Academy of Sciences"
 
     Publications:
-      - title: "[Title Anonymized for Double-Blind Review]"
+      - title: "SC²-WM: A Self-Correcting World Model with Closed-Loop Feedback for Vision-and-Language Navigation in Continuous Environments"
         authors:
           - Xuan Yao
           - Yuze Zhu
           - Junyu Gao
           - Zongmeng Wang
           - Changsheng Xu
-        publisher: "Submitted to ICML 2026"
-        releaseDate: "2026-01"
+        publisher: "Accepted by ICML 2026"
+        releaseDate: "2026"
         url: ""
-        summary: "A study on Vision-Language Navigation. The specific title and abstract are omitted to comply with the double-blind review policy of ICML."
+        summary: "A novel dynamic path correction framework for Vision-and-Language Navigation in continuous environments, demonstrating improved navigation success rate on R2R-CE and RxR-CE benchmarks."
 
     Skills:
       - name: Machine Learning
         level: ""
         icon: fa-solid fa-hashtag
-        keywords: "Deep Learning, Computer Vision, Embodied AI"
+        keywords: "Deep Learning, Computer Vision, Embodied AI, VLA"
 
       - name: Programming
         level: ""
         icon: fa-solid fa-code
-        keywords: "Python, PyTorch, C/C++"
+        keywords: "Python (Proficient), C/C++, LaTeX"
+
+      - name: Frameworks & Tools
+        level: ""
+        icon: fa-solid fa-toolbox
+        keywords: "PyTorch, HuggingFace, Linux, Git, Docker"
 
     Languages:
       - name: Chinese
         summary: "Native speaker"
 
       - name: English
-        summary: "Fluent"
+        summary: "TOEFL 5.0/6.0, Fluent in academic reading and writing"
 
     Interests:
       - name: Artificial Intelligence
@@ -105,11 +119,37 @@ cv:
         icon: ""
 
     Projects:
-      - name: ""
-        summary: ""
-        highlights: []
-        start_date: ""
-        end_date: ""
+      - name: "Multimodal Polygraph System"
+        summary: "Multimedia Information Processing course project. Achieved high-precision polygraphy by analyzing facial micro-expressions and speech features using Qwen3-VL and WavLM."
+        highlights:
+          - "Utilized Qwen3-VL for high-dimensional visual and textual features, combined with WavLM for speech emotion features."
+          - "Designed a multimodal feature concatenation network and classifier, achieving high recognition accuracy."
+        start_date: "2025-10"
+        end_date: "2025-12"
+
+      - name: "MRI Reconstruction based on 3D Residual U-Net"
+        summary: "Cognitive Neuroscience course project. Explored deep learning-based image enhancement for low-field MRI images."
+        highlights:
+          - "Built and trained a 3D Residual U-Net with residual connections for high-quality MRI reconstruction from low-field to high-field."
+        start_date: "2025-11"
+        end_date: "2025-12"
+
+      - name: "Remote-Controlled Robot Car Assembly and Control"
+        summary: "Robotics Seminar course project. Independently completed hardware selection, assembly, and control programming."
+        highlights:
+          - "Debugged motor drivers and sensor modules."
+          - "Developed control programs for obstacle avoidance and remote-control cruising."
+        start_date: "2025-10"
+        end_date: "2025-12"
+
+    Volunteer:
+      - organization: "Chunfen Project Science Popularization Program"
+        position: "Core Volunteer"
+        start_date: "2023"
+        end_date: "Present"
+        highlights:
+          - "Delivered science outreach lectures at over ten primary schools in Beijing, featuring flame test demonstrations."
+          - "Contributed to writing over 60 entries for the Chunfen Project Science Encyclopedia."
 
     References:
       - name: ""

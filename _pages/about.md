@@ -56,7 +56,7 @@ While this page is just a starting point, I aim to continuously enrich it as I g
       <span class="exp-date">Mar 2026 – Present</span>
       <span class="exp-loc">Haidian, Beijing</span>
     </div>
-    <h3 class="exp-title">Embodied AI Algorithm Research Intern</h3>
+    <h3 class="exp-title">Embodied AI Algorithm Intern</h3>
     <div class="exp-org">FiveAges (中科第五纪)</div>
     <p class="exp-desc">
       Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
@@ -71,7 +71,7 @@ While this page is just a starting point, I aim to continuously enrich it as I g
     <h3 class="exp-title">Research Intern</h3>
     <div class="exp-org"><a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a></div>
     <p class="exp-desc">
-      Supervised by Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction. Led the full research cycle from idea proposal and baseline reproduction (PyTorch) to manuscript writing — one paper submitted to <strong>ICML 2026</strong> (under review).
+      Supervised by Assoc. Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction. Led the full research cycle from idea proposal and codebase development to data analysis and manuscript writing — co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
     </p>
   </article>
 </div>

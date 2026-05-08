@@ -5,6 +5,7 @@
 % Packages
 % ----------------------------------------------------------------------------------------
 \usepackage[top=1.5cm, bottom=1.5cm, left=2cm, right=2cm]{geometry} 
+\usepackage{xeCJK}       % Chinese support (for names such as 中科第五纪)
 \usepackage{titlesec}    
 \usepackage{enumitem}    
 \usepackage{hyperref}    
@@ -15,10 +16,14 @@
 \usepackage{tikz}      
 
 % ----------------------------------------------------------------------------------------
-% Font Settings (Standard English Fonts)
+% Font Settings
 % ----------------------------------------------------------------------------------------
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
+% English main font (default Latin Modern is fine under XeLaTeX).
+% Chinese fonts — use Fandol (ships with TeX Live / MiKTeX by default).
+\setCJKmainfont[BoldFont=FandolSong-Bold, ItalicFont=FandolKai-Regular]{FandolSong-Regular}
+\setCJKsansfont[BoldFont=FandolHei-Bold]{FandolHei-Regular}
+% If compiling locally on Windows without Fandol, you may replace the two lines above with:
+% \setCJKmainfont{SimSun}
 
 % ----------------------------------------------------------------------------------------
 % Custom Formatting
@@ -46,7 +51,7 @@
     \vspace{0pt} 
     {\Huge\bfseries Yuze Zhu} \\[0.6em] 
     {\large
-    \faUniversity\ University of Chinese Academy of Sciences, Beijing, PRC, 100049 \\[0.4em]
+    \faUniversity\ University of Chinese Academy of Sciences, Beijing, China, 101408 \\[0.4em]
     \faEnvelope\ \href{mailto:zhuyuze23@mails.ucas.ac.cn}{zhuyuze23@mails.ucas.ac.cn} \quad | \quad
     \faPhone\ +86 155-5712-1756
     }
@@ -76,7 +81,7 @@
 % Experience
 % ----------------------------------------------------------------------------------------
 \section{Experience}
-\textbf{FiveAges (中科第五纪)} \hfill Embodied AI Algorithm Research Intern \\
+\textbf{FiveAges (中科第五纪)} \hfill Embodied AI Algorithm Intern \\
 \textit{Embodied AI Algorithm Team, Beijing} \hfill Mar. 2026 -- Present \\
 \textit{(Supervisor: Prof. Yan Huang)}
 \begin{itemize}
