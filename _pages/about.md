@@ -52,33 +52,41 @@ While this page is just a starting point, I aim to continuously enrich it as I g
 
 <div class="home-experience">
   <article class="exp-card">
-    <div class="exp-meta">
-      <span class="exp-date">Mar 2026 – Present</span>
-      <span class="exp-loc">Haidian, Beijing</span>
+    <div class="exp-layout">
+      <div class="exp-logo-cell">
+        <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" class="exp-logo" loading="lazy" />
+      </div>
+      <div class="exp-body">
+        <div class="exp-meta">
+          <span class="exp-date">Mar 2026 – Present</span>
+          <span class="exp-loc">Haidian, Beijing</span>
+        </div>
+        <h3 class="exp-title">Embodied AI Algorithm Intern</h3>
+        <div class="exp-org">FiveAges (中科第五纪)</div>
+        <p class="exp-desc">
+          Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
+        </p>
+      </div>
     </div>
-    <h3 class="exp-title">Embodied AI Algorithm Intern</h3>
-    <div class="exp-org exp-org-with-logo">
-      <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" class="exp-logo" loading="lazy" />
-      <span>FiveAges (中科第五纪)</span>
-    </div>
-    <p class="exp-desc">
-      Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
-    </p>
   </article>
 
   <article class="exp-card">
-    <div class="exp-meta">
-      <span class="exp-date">Jul 2025 – Jan 2026</span>
-      <span class="exp-loc">Haidian, Beijing</span>
+    <div class="exp-layout">
+      <div class="exp-logo-cell">
+        <img src="{{ '/assets/img/ucas_logo.jpg' | relative_url }}" alt="CAS logo" class="exp-logo exp-logo-round" loading="lazy" />
+      </div>
+      <div class="exp-body">
+        <div class="exp-meta">
+          <span class="exp-date">Jul 2025 – Jan 2026</span>
+          <span class="exp-loc">Haidian, Beijing</span>
+        </div>
+        <h3 class="exp-title">Research Intern</h3>
+        <div class="exp-org"><a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a></div>
+        <p class="exp-desc">
+          Supervised by Assoc. Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction. Led the full research cycle from idea proposal and codebase development to data analysis and manuscript writing — co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
+        </p>
+      </div>
     </div>
-    <h3 class="exp-title">Research Intern</h3>
-    <div class="exp-org exp-org-with-logo">
-      <img src="{{ '/assets/img/ucas_logo.jpg' | relative_url }}" alt="CAS logo" class="exp-logo exp-logo-round" loading="lazy" />
-      <a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a>
-    </div>
-    <p class="exp-desc">
-      Supervised by Assoc. Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction. Led the full research cycle from idea proposal and codebase development to data analysis and manuscript writing — co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
-    </p>
   </article>
 </div>
 
