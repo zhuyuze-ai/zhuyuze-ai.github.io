@@ -50,22 +50,6 @@ While this page is just a starting point, I aim to continuously enrich it as I g
 
 <h2 class="home-section-title">experience</h2>
 
-<style>
-  .home-experience .exp-logo:not(.exp-logo-round) {
-    width: 50%;
-    height: auto;
-    max-height: none;
-  }
-
-  .home-experience .exp-logo-round {
-    width: 50%;
-    height: auto;
-    max-width: 5.5rem;
-    max-height: 5.5rem;
-    object-fit: contain;
-  }
-</style>
-
 <div class="home-experience">
   <article class="exp-card">
     <div class="exp-layout">

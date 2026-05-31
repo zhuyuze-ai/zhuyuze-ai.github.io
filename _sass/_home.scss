@@ -172,37 +172,38 @@ html[data-theme="dark"] body::before {
   .exp-layout {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    min-height: 5.5rem;
+    align-items: center;
+    gap: 0.75rem;
   }
 
   .exp-logo-cell {
-    flex: 0 0 50%;
-    width: 50%;
+    flex: 0 0 auto;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.85rem;
+    padding: 0.45rem 0.55rem;
     border-right: 1px solid var(--global-divider-color);
-    background: color-mix(in srgb, var(--global-bg-color) 55%, var(--global-card-bg-color));
+    background: transparent;
   }
 
   .exp-logo {
     display: block;
-    width: 50%;
+    width: auto;
     height: auto;
+    max-width: 8.5rem;
+    max-height: 4.75rem;
     object-fit: contain;
-    border-radius: 6px;
+    border-radius: 4px;
     background: #fff;
-    padding: 0.4rem;
+    padding: 0.2rem;
   }
 
   .exp-logo-round {
-    width: 50%;
-    height: auto;
-    max-width: 5.5rem;
-    max-height: 5.5rem;
-    aspect-ratio: 1;
+    width: 4.75rem;
+    height: 4.75rem;
+    max-width: 4.75rem;
+    max-height: 4.75rem;
     border-radius: 50%;
     padding: 0;
     background: transparent;
@@ -210,10 +211,9 @@ html[data-theme="dark"] body::before {
   }
 
   .exp-body {
-    flex: 1 1 50%;
-    width: 50%;
+    flex: 1 1 auto;
     min-width: 0;
-    padding: 1rem 1.15rem 1rem 1.25rem;
+    padding: 0.85rem 1rem 0.85rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -281,30 +281,31 @@ html[data-theme="dark"] body::before {
 
   @media (max-width: 480px) {
     .exp-layout {
-      flex-direction: column;
-      min-height: 0;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.55rem;
     }
 
     .exp-logo-cell {
-      flex: none;
-      width: 100%;
-      min-height: 5rem;
-      border-right: none;
-      border-bottom: 1px solid var(--global-divider-color);
+      padding: 0.35rem 0.45rem;
+      border-right: 1px solid var(--global-divider-color);
+      border-bottom: none;
     }
 
     .exp-body {
-      width: 100%;
+      padding: 0.65rem 0.75rem 0.65rem 0;
     }
 
     .exp-logo {
-      width: 42%;
+      max-width: 6.5rem;
+      max-height: 3.75rem;
     }
 
     .exp-logo-round {
-      width: 42%;
-      max-width: 4.25rem;
-      max-height: 4.25rem;
+      width: 3.75rem;
+      height: 3.75rem;
+      max-width: 3.75rem;
+      max-height: 3.75rem;
     }
   }
 }
