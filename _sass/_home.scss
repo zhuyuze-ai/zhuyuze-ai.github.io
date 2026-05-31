@@ -164,9 +164,9 @@ html[data-theme="dark"] body::before {
   }
 
   .exp-logo-cell {
-    flex: 0 0 7.5rem;
-    width: 7.5rem;
-    min-width: 7.5rem;
+    flex: 0 0 9rem;
+    width: 9rem;
+    min-width: 9rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,14 +178,14 @@ html[data-theme="dark"] body::before {
 
   .exp-logo,
   .exp-logo-round {
-    width: 6rem;
-    max-width: 6rem;
+    width: 7.25rem;
+    max-width: 7.25rem;
   }
 
   .exp-logo {
     display: block;
     height: auto;
-    max-height: 5.5rem;
+    max-height: 6.75rem;
     object-fit: contain;
     border-radius: 4px;
     background: #fff;
@@ -193,8 +193,8 @@ html[data-theme="dark"] body::before {
   }
 
   .exp-logo-round {
-    height: 6rem;
-    max-height: 6rem;
+    height: 7.25rem;
+    max-height: 7.25rem;
     aspect-ratio: 1;
     border-radius: 50%;
     padding: 0;
@@ -293,17 +293,17 @@ html[data-theme="dark"] body::before {
 
     .exp-logo,
     .exp-logo-round {
-      width: 5.25rem;
-      max-width: 5.25rem;
+      width: 6.25rem;
+      max-width: 6.25rem;
     }
 
     .exp-logo {
-      max-height: 4.75rem;
+      max-height: 5.75rem;
     }
 
     .exp-logo-round {
-      height: 5.25rem;
-      max-height: 5.25rem;
+      height: 6.25rem;
+      max-height: 6.25rem;
     }
   }
 }
