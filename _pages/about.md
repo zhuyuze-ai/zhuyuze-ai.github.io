@@ -14,16 +14,25 @@ profile:
 
   image_circular: false # crops the image to make it circular
 
-  more_info: >
-    <div class="contact-icons">
-    <a href="mailto:zhuyuze23@mails.ucas.ac.cn" title="email"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/sunrise-yuze" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="https://scholar.google.com" title="Google Scholar" target="_blank"><i class="ai ai-google-scholar"></i></a>
-    </div>
+hero_links:
+  - label: Email
+    icon: fas fa-envelope
+    url: mailto:zhuyuze23@mails.ucas.ac.cn
+    primary: true
+
+  - label: GitHub
+    icon: fab fa-github
+    url: https://github.com/sunrise-yuze
+    external: true
+
+  - label: Google Scholar
+    icon: ai ai-google-scholar
+    url: https://scholar.google.com
+    external: true
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 
 announcements:
   enabled: true # includes a list of news items
@@ -47,48 +56,43 @@ I am always happy to meet friends from around the world. If you would like to ch
 
 While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
 
-<h2 class="home-section-title">experience</h2>
-
-<div class="home-experience">
-  <article class="exp-card">
-    <div class="exp-layout">
-      <div class="exp-logo-cell">
-        <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" class="exp-logo" loading="lazy" />
-      </div>
-      <div class="exp-body">
-        <div class="exp-meta">
-          <span class="exp-date">Mar 2026 – Present</span>
-          <span class="exp-loc">Haidian, Beijing</span>
-        </div>
-        <h3 class="exp-title">Embodied AI Algorithm Intern</h3>
-        <div class="exp-org">FiveAges (中科第五纪)</div>
-        <p class="exp-desc">
-          Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
-        </p>
-      </div>
-    </div>
-  </article>
-
-  <article class="exp-card">
-    <div class="exp-layout">
-      <div class="exp-logo-cell">
-        <img src="{{ '/assets/img/ucas_logo.jpg' | relative_url }}" alt="CAS logo" class="exp-logo exp-logo-round" loading="lazy" />
-      </div>
-      <div class="exp-body">
-        <div class="exp-meta">
-          <span class="exp-date">Jul 2025 – Jan 2026</span>
-          <span class="exp-loc">Haidian, Beijing</span>
-        </div>
-        <h3 class="exp-title">Research Intern</h3>
-        <div class="exp-org"><a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a></div>
-        <p class="exp-desc">
-          Supervised by Assoc. Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction. Led the full research cycle from idea proposal and codebase development to data analysis and manuscript writing — co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
-        </p>
-      </div>
-    </div>
-  </article>
+<div class="section-head">
+  <h2 class="home-section-title" id="experience">experience</h2>
+  <a class="section-more" href="{{ '/cv/' | relative_url }}">full CV <span aria-hidden="true">&#8599;</span></a>
 </div>
 
-<div class="home-experience-footer">
-  <a href="{{ '/cv/' | relative_url }}">→ full CV</a>
+<div class="home-experience">
+  <article class="exp-item">
+    <div class="exp-logo-tile">
+      <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
+    </div>
+    <div class="exp-main">
+      <div class="exp-row">
+        <h3 class="exp-title">Embodied AI Algorithm Intern</h3>
+        <span class="exp-date">Mar 2026 - Present</span>
+      </div>
+      <div class="exp-org">FiveAges (中科第五纪) &middot; Beijing</div>
+      <p class="exp-desc">
+        Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
+      </p>
+    </div>
+  </article>
+
+  <article class="exp-item">
+    <div class="exp-logo-tile">
+      <img src="{{ '/assets/img/ucas_logo.jpg' | relative_url }}" alt="CASIA logo" loading="lazy" />
+    </div>
+    <div class="exp-main">
+      <div class="exp-row">
+        <h3 class="exp-title">Research Intern</h3>
+        <span class="exp-date">Jul 2025 - Jan 2026</span>
+      </div>
+      <div class="exp-org">
+        <a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a> &middot; Beijing
+      </div>
+      <p class="exp-desc">
+        Supervised by Assoc. Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction, leading the full research cycle from idea proposal and codebase development to data analysis and manuscript writing. Co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
+      </p>
+    </div>
+  </article>
 </div>

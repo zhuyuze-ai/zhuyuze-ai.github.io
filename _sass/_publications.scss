@@ -8,8 +8,10 @@
   margin-top: 2rem;
 
   h1 {
-    color: var(--global-theme-color);
+    color: var(--global-text-color);
     font-size: 2rem;
+    font-weight: 650;
+    letter-spacing: -0.025em;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -24,11 +26,18 @@
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-text-color-light);
+    font-family: var(--global-font-mono);
+    font-weight: 500;
+    letter-spacing: 0.08em;
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
+
+    span {
+      font-size: 1.05rem;
+    }
   }
 
   ol.bibliography {
@@ -49,25 +58,20 @@
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
+          border-radius: 8px;
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
-          font-size: 0.85rem;
-          font-weight: 700;
-          letter-spacing: 0.04em;
-          padding: 0.35em 0.65em;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-          transition:
-            transform 0.2s ease,
-            box-shadow 0.2s ease;
-
-          &:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-          }
+          color: var(--global-accent-contrast) !important;
+          font-family: var(--global-font-mono);
+          font-size: 0.78rem;
+          font-weight: 600;
+          letter-spacing: 0.06em;
+          padding: 0.35em 0.7em;
+          box-shadow: none;
+          transition: background-color 0.3s var(--global-ease-out);
 
           a {
-            color: white;
-            font-weight: 700;
+            color: var(--global-accent-contrast);
+            font-weight: 600;
 
             &:hover {
               text-decoration: none;
@@ -76,55 +80,88 @@
         }
 
         .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
+          color: var(--global-highlight-color) !important;
+          background-color: transparent;
+          border: 1px solid var(--global-highlight-color);
+        }
+
+        /* Venue-specific colors arrive as inline background styles; those
+           backgrounds are dark, so force readable white text in both themes. */
+        abbr[style] {
+          color: #ffffff !important;
+
+          a {
+            color: #ffffff;
+          }
         }
       }
 
       .title {
-        font-weight: bolder;
+        font-weight: 600;
+        letter-spacing: -0.01em;
       }
 
       .author {
+        color: var(--global-text-color-light);
+        font-size: 0.95rem;
+
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          color: var(--global-text-color-light);
 
           &:hover {
-            border-bottom-style: solid;
+            color: var(--global-theme-color);
             text-decoration: none;
           }
         }
 
         > em {
-          border-bottom: 1px solid;
+          border-bottom: 1px solid var(--global-theme-color);
           font-style: normal;
+          color: var(--global-text-color);
         }
 
         > span.more-authors {
           color: var(--global-text-color-light);
-          border-bottom: 1px dashed var(--global-text-color-light);
           cursor: pointer;
+          transition: color 0.25s var(--global-ease-out);
 
           &:hover {
             color: var(--global-text-color);
-            border-bottom: 1px dashed var(--global-text-color);
           }
         }
       }
 
+      .periodical {
+        color: var(--global-text-color-light);
+        font-size: 0.92rem;
+      }
+
       .links {
         a.btn {
-          color: var(--global-text-color);
-          border: 1px solid var(--global-text-color);
-          padding-left: 1rem;
-          padding-right: 1rem;
-          padding-top: 0.25rem;
-          padding-bottom: 0.25rem;
+          color: var(--global-text-color-light);
+          border: 1px solid var(--global-divider-color);
+          border-radius: 999px;
+          background: var(--global-card-bg-color);
+          font-size: 0.82rem;
+          font-weight: 500;
+          padding: 0.24rem 0.85rem;
           margin-left: 0;
+          margin-bottom: 0.25rem;
+          transition:
+            color 0.3s var(--global-ease-spring),
+            border-color 0.3s var(--global-ease-spring),
+            background-color 0.3s var(--global-ease-spring),
+            transform 0.3s var(--global-ease-spring);
 
           &:hover {
             color: var(--global-theme-color);
-            border-color: var(--global-theme-color);
+            border-color: color-mix(in srgb, var(--global-theme-color) 45%, var(--global-divider-color));
+            background: var(--global-accent-soft);
+            transform: translateY(-1px);
+          }
+
+          &:active {
+            transform: translateY(0) scale(0.97);
           }
         }
         a.award.btn {
@@ -136,7 +173,7 @@
         padding-bottom: 0.5rem;
         span {
           display: inline-block;
-          color: v.$black-color;
+          color: var(--global-text-color);
           height: 100%;
           padding-right: 0.5rem;
           vertical-align: middle;
@@ -180,18 +217,23 @@
       }
 
       div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+        border: 1px solid transparent;
+        border-radius: var(--global-radius-tile);
       }
 
       div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+        border-color: var(--global-divider-color);
+        background: var(--global-accent-soft);
+        margin-top: 0.5rem;
       }
     }
     div.award.hidden {
-      border: dashed 1px var(--global-bg-color);
+      border: 1px solid transparent;
+      border-radius: var(--global-radius-tile);
     }
     div.award.hidden.open {
       border-color: var(--global-highlight-color);
+      margin-top: 0.5rem;
     }
   }
 }

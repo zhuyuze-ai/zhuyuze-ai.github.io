@@ -1,17 +1,37 @@
 ---
 layout: default
 ---
-<div class="post">
+<div class="post about-page">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
         <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
         {{ site.last_name }}
       {% else %}
-        {{ site.title }}
+        {% assign title_parts = site.title | split: '(' %}
+        <span class="hero-name-latin">{{ title_parts[0] | strip }}</span>
+        {% if title_parts[1] %}
+          <span class="hero-name-cjk" lang="zh">{{ title_parts[1] | remove: ')' | strip }}</span>
+        {% endif %}
       {% endif %}
     </h1>
     <p class="desc">{{ page.subtitle }}</p>
+    {% if page.hero_links %}
+      <nav class="hero-actions" aria-label="Contact links">
+        {% for link in page.hero_links %}
+          <a
+            class="hero-pill{% if link.primary %} hero-pill-primary{% endif %}"
+            href="{{ link.url }}"
+            {% if link.external %}
+              target="_blank" rel="noopener noreferrer"
+            {% endif %}
+          >
+            {% if link.icon %}<i class="{{ link.icon }}" aria-hidden="true"></i>{% endif %}
+            <span>{{ link.label }}</span>
+          </a>
+        {% endfor %}
+      </nav>
+    {% endif %}
   </header>
 
   <article>
@@ -20,10 +40,9 @@ layout: default
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'img-fluid rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'img-fluid rounded' %}
           {% endif %}
           {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
       30vw, 95vw"{% endcapture %}
@@ -43,27 +62,32 @@ layout: default
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
       <section class="home-news">
-        <h2>
-          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-        </h2>
+        <div class="section-head">
+          <h2>news</h2>
+          <a class="section-more" href="{{ '/news/' | relative_url }}">all news <span aria-hidden="true">&#8599;</span></a>
+        </div>
         {% include news.liquid limit=true %}
       </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="home-posts">
+        <div class="section-head">
+          <h2>latest posts</h2>
+          <a class="section-more" href="{{ '/blog/' | relative_url }}">all posts <span aria-hidden="true">&#8599;</span></a>
+        </div>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <section class="home-publications">
-        <h2>
-          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-        </h2>
+        <div class="section-head">
+          <h2>selected publications</h2>
+          <a class="section-more" href="{{ '/publications/' | relative_url }}">all publications <span aria-hidden="true">&#8599;</span></a>
+        </div>
         {% include selected_papers.liquid %}
       </section>
     {% endif %}
@@ -82,3 +106,31 @@ layout: default
     {% endif %}
   </article>
 </div>
+
+<script>
+  // Scroll-triggered reveals. Progressive enhancement: the .reveal class is
+  // only ever added from here, so content stays visible without JavaScript,
+  // and reduced-motion users never see the effect at all.
+  (function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!('IntersectionObserver' in window)) return;
+    var targets = document.querySelectorAll(
+      '.about-page article .clearfix > p, .about-page .section-head, .about-page .exp-item, .about-page .home-news .news tr, .about-page .home-publications ol.bibliography > li'
+    );
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { rootMargin: '0px 0px -6% 0px', threshold: 0.06 }
+    );
+    targets.forEach(function (el) {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  })();
+</script>

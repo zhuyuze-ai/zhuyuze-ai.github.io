@@ -21,10 +21,29 @@ $green-color-bright: #11d68b !default;
 $purple-color: #b509ac !default;
 $light-purple-color: color.adjust($purple-color, $lightness: 25%);
 
-// Sci-fi light blue palette — used as the default theme accent.
-$sci-blue-color: #0ea5e9 !default; // sky-500: primary accent on light backgrounds
-$sci-blue-color-light: #38bdf8 !default; // sky-400: primary accent on dark backgrounds
-$sci-blue-color-dark: #0369a1 !default; // sky-700: reserved for strong emphasis
+// Legacy sci-fi light blue palette (kept for backwards compatibility).
+$sci-blue-color: #0ea5e9 !default;
+$sci-blue-color-light: #38bdf8 !default;
+$sci-blue-color-dark: #0369a1 !default;
+
+// 2026 redesign palette: single cobalt accent + cool neutral surfaces.
+$cobalt-500: #2554e0 !default; // light-mode accent
+$cobalt-600: #1c46c8 !default; // light-mode accent, hover / strong
+$azure-300: #7da4f8 !default; // dark-mode accent
+$azure-200: #a9c4ff !default; // dark-mode accent, hover / strong
+
+$paper-light: #fbfbfd !default; // page background, light
+$card-light: #ffffff !default; // raised surface, light
+$ink-900: #171b23 !default; // primary text, light
+$ink-500: #5d6572 !default; // secondary text, light
+
+$paper-dark: #0d1017 !default; // page background, dark
+$card-dark: #151a23 !default; // raised surface, dark
+$mist-100: #e7eaf1 !default; // primary text, dark
+$mist-400: #99a3b3 !default; // secondary text, dark
+
+$award-gold-light: #a16207 !default; // semantic award highlight, light
+$award-gold-dark: #dba64b !default; // semantic award highlight, dark
 $pink-color: #f92080 !default;
 $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
@@ -39,8 +58,8 @@ $black-color: #000000 !default;
 
 // Theme colors
 
-$code-bg-color-light: rgba($sci-blue-color, 0.06);
-$code-bg-color-dark: #2c3237 !default;
+$code-bg-color-light: rgba($cobalt-500, 0.055);
+$code-bg-color-dark: #1a2130 !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";

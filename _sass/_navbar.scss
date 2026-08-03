@@ -7,21 +7,33 @@
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
-  opacity: 0.95;
+  background-color: color-mix(in srgb, var(--global-bg-color) 78%, transparent);
+  backdrop-filter: blur(16px) saturate(160%);
+  -webkit-backdrop-filter: blur(16px) saturate(160%);
+  transition: background-color 0.35s var(--global-ease-out);
+}
+
+/* Solid fallback when backdrop-filter is unavailable */
+@supports not (backdrop-filter: blur(1px)) {
+  .navbar {
+    background-color: var(--global-bg-color);
+  }
 }
 
 .navbar .dropdown-menu,
 .btn-group.dropdown .dropdown-menu {
-  background-color: var(--global-bg-color);
+  background-color: var(--global-card-bg-color);
   border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 0.4rem;
+  box-shadow: var(--global-card-shadow);
 
   a:not(.active) {
     color: var(--global-text-color);
   }
 
   a:hover {
-    color: var(--global-hover-color);
+    color: var(--global-theme-color);
   }
 
   .dropdown-divider {
@@ -31,10 +43,14 @@
 
 .dropdown-item {
   color: var(--global-text-color);
+  border-radius: 8px;
+  transition:
+    background-color 0.25s var(--global-ease-out),
+    color 0.25s var(--global-ease-out);
 
   &:hover {
-    color: var(--global-hover-color);
-    background-color: var(--global-bg-color);
+    color: var(--global-theme-color);
+    background-color: var(--global-accent-soft);
   }
 }
 
@@ -57,23 +73,64 @@
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-weight: 600;
+    letter-spacing: -0.015em;
   }
 
   .navbar-nav .nav-item .nav-link {
-    color: var(--global-text-color);
+    position: relative;
+    color: var(--global-text-color-light);
+    font-size: 0.94rem;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    transition: color 0.3s var(--global-ease-out);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.5rem;
+      right: 0.5rem;
+      bottom: 0.28rem;
+      height: 2px;
+      border-radius: 2px;
+      background: var(--global-theme-color);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.35s var(--global-ease-spring);
+    }
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-text-color);
+
+      &::after {
+        transform: scaleX(1);
+      }
     }
   }
 
   .navbar-nav .nav-item.active > .nav-link {
     background-color: inherit;
-    font-weight: bolder;
-    color: var(--global-theme-color);
+    font-weight: 600;
+    color: var(--global-text-color);
+
+    &::after {
+      transform: scaleX(1);
+    }
 
     &:hover {
-      color: var(--global-hover-color);
+      color: var(--global-text-color);
+    }
+  }
+
+  /* The collapsed mobile menu is right-aligned; the sliding underline reads
+     wrong there, so fall back to plain color states. */
+  @media (max-width: 575.98px) {
+    .navbar-nav .nav-item .nav-link::after {
+      display: none;
+    }
+
+    .navbar-nav .nav-item.active > .nav-link {
+      color: var(--global-theme-color);
     }
   }
 

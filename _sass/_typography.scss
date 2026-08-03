@@ -19,6 +19,17 @@ strong {
   color: var(--global-text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  line-height: 1.25;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -38,10 +49,14 @@ table {
 a,
 table.table a {
   color: var(--global-theme-color);
+  text-decoration: none;
+  transition: color 0.25s var(--global-ease-out);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-theme-color-strong);
     text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1.5px;
   }
 
   &:hover:after :not(.nav-item.dropdown) {
@@ -57,11 +72,12 @@ table.table a {
 }
 
 blockquote {
-  background: var(--global-bg-color);
-  border-left: 5px solid var(--global-theme-color);
+  background: var(--global-accent-soft);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0 var(--global-radius-tile) var(--global-radius-tile) 0;
   margin: 1.5em 0;
-  padding: 1em;
-  font-size: 1.2rem;
+  padding: 0.9em 1.1em;
+  font-size: 1.05rem;
 
   p {
     margin-bottom: 0;
