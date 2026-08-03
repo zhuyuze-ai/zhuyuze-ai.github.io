@@ -11,14 +11,18 @@
   {% endif %}
 {% endcapture %}
 
-<!-- MapMyVisitors visitor tracking (ClustrMaps is currently unreachable) -->
-<div style="margin: 4rem auto 0; text-align: center; opacity: 0.75;">
+<!--
+  MapMyVisitors visitor tracking. The whole block hides itself if the
+  service is down or unreachable, so visitors never see a broken image.
+-->
+<div id="visitor-map" style="margin: 4rem auto 0; text-align: center; opacity: 0.75;">
   <a href="https://mapmyvisitors.com/" title="Visitor map" style="display: inline-block;">
     <img
       src="https://mapmyvisitors.com/map.png?d=edS_k3YVBg7F9yKsg9DQcpYiH7lSNczOX1831wnpkbQ&cl=aaaaaa&w=500&co=0d0d0d"
       style="max-width: 100%; width: 420px; border-radius: 12px; border: 1px solid var(--global-divider-color);"
       alt="Visitor map"
       loading="lazy"
+      onerror="document.getElementById('visitor-map').style.display='none'"
     >
   </a>
 </div>

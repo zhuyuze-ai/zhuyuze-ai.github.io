@@ -27,7 +27,7 @@ hero_links:
 
   - label: Google Scholar
     icon: ai ai-google-scholar
-    url: https://scholar.google.com
+    url: https://scholar.google.com/citations?user=xCZdP8wAAAAJ&hl=en
     external: true
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -51,8 +51,7 @@ latest_posts:
 
 I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Action (VLA).
 
-Beyond research, I am a passionate photographer. Born and raised in **Hangzhou** and now based in **Beijing** for my studies and research.
-I am always happy to meet friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
+Beyond research, I am a passionate photographer. Born and raised in **Hangzhou** and now based in **Beijing** for my studies, I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
 
 While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
 
