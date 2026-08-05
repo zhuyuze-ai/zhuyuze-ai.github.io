@@ -48,7 +48,7 @@ table {
 
 a,
 table.table a {
-  color: var(--global-theme-color);
+  color: var(--global-text-color);
   text-decoration: none;
   transition: color 0.25s var(--global-ease-out);
 
@@ -62,6 +62,14 @@ table.table a {
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
   }
+}
+
+/* Prose links keep a quiet hairline underline so they still read as links at rest */
+p > a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--global-text-color) 32%, transparent);
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .table-dark {

@@ -93,7 +93,7 @@
       bottom: 0.28rem;
       height: 2px;
       border-radius: 2px;
-      background: var(--global-theme-color);
+      background: var(--global-text-color);
       transform: scaleX(0);
       transform-origin: left center;
       transition: transform 0.35s var(--global-ease-spring);
@@ -130,7 +130,7 @@
     }
 
     .navbar-nav .nav-item.active > .nav-link {
-      color: var(--global-theme-color);
+      color: var(--global-text-color);
     }
   }
 
