@@ -18,7 +18,6 @@ hero_links:
   - label: Email
     icon: fas fa-envelope
     url: mailto:zhuyuze23@mails.ucas.ac.cn
-    primary: true
 
   - label: GitHub
     icon: fab fa-github

@@ -1,7 +1,6 @@
 /*******************************************************************************
  * Homepage (about page): research-grade minimalism.
- * Ink-neutral resting state; cobalt appears only as interaction feedback.
- * Cool neutral surfaces, quiet top-of-page texture,
+ * One cobalt accent, cool neutral surfaces, quiet top-of-page texture,
  * cards only where hierarchy earns them (experience, publications).
  * Everything is CSS-variable driven so light and dark stay in sync.
  ******************************************************************************/
@@ -79,7 +78,7 @@ body::before {
   }
 }
 
-/* Contact actions: pill buttons, one filled primary + quiet secondaries */
+/* Contact actions: quiet pill buttons */
 .about-page .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -126,47 +125,6 @@ body::before {
 
   &:active {
     transform: translateY(0) scale(0.97);
-  }
-}
-
-.about-page .hero-pill-primary {
-  background: linear-gradient(180deg, #333a46 0%, #232935 55%, #191e28 100%);
-  border-color: transparent;
-  color: var(--global-accent-contrast);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.14),
-    0 8px 20px -10px rgba(23, 27, 35, 0.55);
-
-  i {
-    color: var(--global-accent-contrast);
-    opacity: 0.85;
-  }
-
-  &:hover {
-    background: linear-gradient(180deg, #3d4553 0%, #2c3340 55%, #232935 100%);
-    color: var(--global-accent-contrast);
-    border-color: transparent;
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.18),
-      0 12px 28px -12px rgba(23, 27, 35, 0.6);
-
-    i {
-      color: var(--global-accent-contrast);
-    }
-  }
-}
-
-html[data-theme="dark"] .about-page .hero-pill-primary {
-  background: linear-gradient(180deg, #f4f6fa 0%, #e3e7ef 55%, #d6dbe6 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.6),
-    0 8px 20px -10px rgba(0, 0, 0, 0.55);
-
-  &:hover {
-    background: linear-gradient(180deg, #ffffff 0%, #eef1f7 55%, #e3e7ef 100%);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.7),
-      0 12px 28px -12px rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -303,7 +261,7 @@ html[data-theme="dark"] .about-page .hero-pill-primary {
     font-family: var(--global-font-mono);
     font-size: 0.78rem;
     font-weight: 500;
-    color: var(--global-text-color-light);
+    color: var(--global-theme-color);
     letter-spacing: 0.02em;
     width: auto !important;
   }
@@ -425,7 +383,6 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
   color: var(--global-text-color);
 
   strong {
-    color: var(--global-text-color);
     font-weight: 600;
   }
 }

@@ -20,7 +20,7 @@ layout: default
       <nav class="hero-actions" aria-label="Contact links">
         {% for link in page.hero_links %}
           <a
-            class="hero-pill{% if link.primary %} hero-pill-primary{% endif %}"
+            class="hero-pill"
             href="{{ link.url }}"
             {% if link.external %}
               target="_blank" rel="noopener noreferrer"

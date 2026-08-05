@@ -57,7 +57,7 @@
 
         abbr {
           display: inline-block;
-          background-color: var(--global-text-color);
+          background-color: var(--global-theme-color);
           border-radius: 8px;
           margin-bottom: 0.5rem;
           color: var(--global-accent-contrast) !important;
@@ -115,7 +115,7 @@
         }
 
         > em {
-          border-bottom: 1px solid color-mix(in srgb, var(--global-text-color) 45%, transparent);
+          border-bottom: 1px solid var(--global-theme-color);
           font-style: normal;
           color: var(--global-text-color);
         }
@@ -240,5 +240,5 @@
 
 .citation,
 .citation-number {
-  color: var(--global-text-color-light);
+  color: var(--global-theme-color);
 }
