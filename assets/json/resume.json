@@ -51,7 +51,22 @@
   ],
   "awards": [],
   "certificates": [],
-  "publications": [],
+  "publications": [
+    {
+      "name": "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation",
+      "publisher": "arXiv preprint arXiv:2608.05042",
+      "releaseDate": "2026-08-01",
+      "url": "https://arxiv.org/abs/2608.05042",
+      "summary": "Peiyan Li*, Yuze Zhu*, Yixiang Chen, Qisen Ma, Yuan Xu, Jiabing Yang, He Guan, Yan Huang, Hongtao Wu, Xiao Ma, Tao Kong, Liang Wang, Tieniu Tan (* equal contribution)."
+    },
+    {
+      "name": "SC^2-WM: A Self-Correcting World Model with Closed-Loop Feedback for Vision-and-Language Navigation in Continuous Environments",
+      "publisher": "International Conference on Machine Learning (ICML) 2026",
+      "releaseDate": "2026-01-01",
+      "url": "https://arxiv.org/abs/2608.07548",
+      "summary": "Xuan Yao, Yuze Zhu, Junyu Gao, Zongmeng Wang, Changsheng Xu."
+    }
+  ],
   "skills": [
     {
       "name": "Machine Learning",

@@ -39,6 +39,7 @@ cv:
         highlights:
           - "Researched and engineered Vision-Language-Action (VLA) models for embodied intelligence applications."
           - "Supported deployment and validation of VLA models on real robotic systems, connecting model development with practical robot execution."
+          - "Co-first-authored BridgeVLA++, a data-efficient, generalizable, and memory-augmented VLA framework for 3D manipulation (arXiv:2608.05042)."
 
       - company: Institute of Automation, Chinese Academy of Sciences (CASIA)
         position: Research Intern
@@ -52,6 +53,25 @@ cv:
           - "Evaluated the method on R2R-CE and RxR-CE, supporting a second-author paper accepted to ICML 2026."
 
     Publications:
+      - title: "BridgeVLA++: A Data-Efficient, Generalizable, and Memory-Augmented Vision-Language-Action Framework for 3D Manipulation"
+        authors:
+          - "Peiyan Li\\*"
+          - "**Yuze Zhu**\\*"
+          - Yixiang Chen
+          - Qisen Ma
+          - Yuan Xu
+          - Jiabing Yang
+          - He Guan
+          - Yan Huang
+          - Hongtao Wu
+          - Xiao Ma
+          - Tao Kong
+          - Liang Wang
+          - Tieniu Tan
+        journal: "arXiv preprint arXiv:2608.05042, 2026; \\* equal contribution"
+        date: "2026-08"
+        url: https://arxiv.org/abs/2608.05042
+
       - title: "SC^2-WM: A Self-Correcting World Model with Closed-Loop Feedback for Vision-and-Language Navigation in Continuous Environments"
         authors:
           - Xuan Yao
@@ -61,6 +81,7 @@ cv:
           - Changsheng Xu
         journal: "International Conference on Machine Learning (ICML), 2026 (Accepted)"
         date: "2026"
+        url: https://arxiv.org/abs/2608.07548
 
     Honors and Awards:
       - name: "Outstanding Youth League Member (2025-2026)"
