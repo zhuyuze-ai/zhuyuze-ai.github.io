@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "CV",
-          description: "Yuze Zhu&#39;s Curriculum Vitae - Undergraduate Researcher in Embodied AI at UCAS",
+          description: "Yuze Zhu&#39;s Curriculum Vitae - Undergraduate Researcher in Embodied AI at UCAS, currently a Visiting Student at UC Berkeley",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -392,6 +392,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-our-paper-sc-wm-a-self-correcting-world-model-with-closed-loop-feedback-for-vision-and-language-navigation-in-continuous-environments-has-been-accepted-by-icml-2026",
           title: 'Our paper “SC²-WM: A Self-Correcting World Model with Closed-Loop Feedback for Vision-and-Language Navigation...',
+          description: "",
+          section: "News",},{id: "news-started-as-a-visiting-student-in-computer-science-at-the-university-of-california-berkeley",
+          title: 'Started as a visiting student in Computer Science at the University of California,...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',

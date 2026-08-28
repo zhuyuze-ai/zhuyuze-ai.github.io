@@ -5,3 +5,5 @@ design:
     size: a4
     show_footer: false
     show_top_note: false
+  entries:
+    degree_width: 2.8cm # widen the education degree column so e.g. "Visiting Student" doesn't hyphenate
