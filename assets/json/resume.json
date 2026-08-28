@@ -5,13 +5,13 @@
     "image": "",
     "email": "zhuyuze23@mails.ucas.ac.cn",
     "phone": "",
-    "summary": "A junior undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), with research interests in Embodied AI and Vision-Language Navigation.",
+    "summary": "A senior (fourth-year) undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS), currently a visiting student in Computer Science at UC Berkeley, with research interests in Embodied AI and Vision-Language Navigation.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Beijing",
-      "countryCode": "CN",
-      "region": ""
+      "city": "Berkeley",
+      "countryCode": "US",
+      "region": "California"
     },
     "profiles": [
       {
@@ -24,6 +24,18 @@
   "work": [],
   "volunteer": [],
   "education": [
+    {
+      "institution": "University of California, Berkeley",
+      "location": "Berkeley, CA, USA",
+      "url": "https://eecs.berkeley.edu/",
+      "area": "Computer Science",
+      "studyType": "Visiting Student",
+      "startDate": "2026-08-01",
+      "endDate": "",
+      "score": "",
+      "courses": [],
+      "highlights": ["Visiting undergraduate student in Computer Science"]
+    },
     {
       "institution": "University of Chinese Academy of Sciences (UCAS)",
       "location": "Beijing, China",

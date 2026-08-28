@@ -3,7 +3,7 @@ cv:
   headline: Undergraduate Researcher, Embodied AI
   email: zhuyuze23@mails.ucas.ac.cn
   phone: "+86 155-5712-1756"
-  location: Beijing, China
+  location: Berkeley, CA, USA
   website: https://zhuyuze-ai.github.io
 
   social_networks:
@@ -12,6 +12,13 @@ cv:
 
   sections:
     Education:
+      - institution: University of California, Berkeley
+        location: Berkeley, CA, USA
+        area: Computer Science
+        degree: Visiting Student
+        start_date: "2026-08"
+        end_date: present
+
       - institution: University of Chinese Academy of Sciences (UCAS)
         location: Beijing, China
         area: School of Artificial Intelligence
@@ -27,11 +34,11 @@ cv:
         position: Embodied AI Algorithm Intern
         location: Beijing, China
         start_date: "2026-03"
-        end_date: present
+        end_date: "2026-08"
         summary: "Embodied AI Algorithm Team; supervised by Prof. Yan Huang."
         highlights:
-          - "Research and engineer Vision-Language-Action (VLA) models for embodied intelligence applications."
-          - "Support deployment and validation of VLA models on real robotic systems, connecting model development with practical robot execution."
+          - "Researched and engineered Vision-Language-Action (VLA) models for embodied intelligence applications."
+          - "Supported deployment and validation of VLA models on real robotic systems, connecting model development with practical robot execution."
 
       - company: Institute of Automation, Chinese Academy of Sciences (CASIA)
         position: Research Intern

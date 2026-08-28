@@ -5,7 +5,7 @@ title: about
 
 permalink: /
 
-subtitle: <a href='https://ai.ucas.ac.cn/'>School of Artificial Intelligence, UCAS</a>. Beijing, China.
+subtitle: Visiting Student, <a href='https://eecs.berkeley.edu/'>Computer Science, UC Berkeley</a> · <a href='https://ai.ucas.ac.cn/'>School of Artificial Intelligence, UCAS</a>.
 
 profile:
   align: right
@@ -48,9 +48,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am currently a third-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). My research interests lie in Embodied AI, with a specific focus on Vision-Language Action (VLA).
+I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). Since August 2026, I have been a visiting student in Computer Science at the University of California, Berkeley. My research interests lie in Embodied AI, with a specific focus on Vision-Language Action (VLA).
 
-Beyond research, I am a passionate photographer. Born and raised in **Hangzhou** and now based in **Beijing** for my studies, I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
+Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**, I spent three years in **Beijing** for my studies and am now based in **Berkeley, California**, and I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
 
 While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
 
@@ -67,11 +67,11 @@ While this page is just a starting point, I aim to continuously enrich it as I g
     <div class="exp-main">
       <div class="exp-row">
         <h3 class="exp-title">Embodied AI Algorithm Intern</h3>
-        <span class="exp-date">Mar 2026 - Present</span>
+        <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
       <div class="exp-org">FiveAges (中科第五纪) &middot; Beijing</div>
       <p class="exp-desc">
-        Supervised by Prof. Yan Huang. Working on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
+        Supervised by Prof. Yan Huang. Worked on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
       </p>
     </div>
   </article>
