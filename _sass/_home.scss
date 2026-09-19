@@ -311,12 +311,13 @@ body::before {
 }
 
 .about-page .exp-logo-tile {
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 7rem;
+  height: 7rem;
+  align-self: start;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem;
+  padding: 0.55rem;
   background: #ffffff;
   border: 1px solid var(--global-divider-color);
   border-radius: var(--global-radius-tile);
@@ -352,19 +353,6 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--global-text-color);
-}
-
-.about-page .exp-date {
-  font-family: var(--global-font-mono);
-  font-size: 0.77rem;
-  color: var(--global-text-color-light);
-  white-space: nowrap;
-}
-
-.about-page .exp-org {
-  font-size: 0.9rem;
-  color: var(--global-text-color-light);
-  margin-bottom: 0.15rem;
 
   a {
     color: inherit;
@@ -374,6 +362,13 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
       text-decoration: none;
     }
   }
+}
+
+.about-page .exp-date {
+  font-family: var(--global-font-mono);
+  font-size: 0.77rem;
+  color: var(--global-text-color-light);
+  white-space: nowrap;
 }
 
 .about-page .exp-meta {

@@ -52,10 +52,8 @@ I am a fourth-year undergraduate student at the School of Artificial Intelligenc
 
 Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**, I spent three years in **Beijing** for my studies and am now based in **Berkeley, California**, and I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
 
-While this page is just a starting point, I aim to continuously enrich it as I grow. I look forward to participating in more open-source projects and making meaningful contributions to the field in the future.
-
 <div class="section-head">
-  <h2 class="home-section-title" id="experience">experience</h2>
+  <h2 class="home-section-title" id="experience">Experience</h2>
   <a class="section-more" href="{{ '/cv/' | relative_url }}">full CV <span aria-hidden="true">&#8599;</span></a>
 </div>
 
@@ -66,11 +64,8 @@ While this page is just a starting point, I aim to continuously enrich it as I g
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">Visiting Student Researcher</h3>
+        <h3 class="exp-title">Trevor Darrell Group, <a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">BAIR</a> &middot; UC Berkeley</h3>
         <span class="exp-date">Sep 2026 - Present</span>
-      </div>
-      <div class="exp-org">
-        Trevor Darrell Group, <a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">BAIR</a> &middot; UC Berkeley
       </div>
       <div class="exp-meta">Berkeley, California &middot; Advised by Roei Herzig</div>
       <p class="exp-desc">
@@ -85,11 +80,10 @@ While this page is just a starting point, I aim to continuously enrich it as I g
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">Embodied AI Algorithm Intern</h3>
+        <h3 class="exp-title">FiveAges (中科第五纪)</h3>
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
-      <div class="exp-org">FiveAges (中科第五纪) &middot; Beijing</div>
-      <div class="exp-meta">Advised by Yan Huang and Liang Wang</div>
+      <div class="exp-meta">Beijing, China &middot; Advised by Yan Huang and Liang Wang</div>
       <p class="exp-desc">
         Worked on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
       </p>
@@ -102,13 +96,12 @@ While this page is just a starting point, I aim to continuously enrich it as I g
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">Research Intern</h3>
+        <h3 class="exp-title">
+          <a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a>
+        </h3>
         <span class="exp-date">Jul 2025 - Jan 2026</span>
       </div>
-      <div class="exp-org">
-        <a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a> &middot; Beijing
-      </div>
-      <div class="exp-meta">Advised by Junyu Gao and Changsheng Xu</div>
+      <div class="exp-meta">Beijing, China &middot; Advised by Junyu Gao and Changsheng Xu</div>
       <p class="exp-desc">
         Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction, leading the full research cycle from idea proposal and codebase development to data analysis and manuscript writing. Co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
       </p>

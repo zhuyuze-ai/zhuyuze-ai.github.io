@@ -63,7 +63,7 @@ layout: default
     {% if page.announcements and page.announcements.enabled %}
       <section class="home-news">
         <div class="section-head">
-          <h2>news</h2>
+          <h2>News</h2>
           <a class="section-more" href="{{ '/news/' | relative_url }}">all news <span aria-hidden="true">&#8599;</span></a>
         </div>
         {% include news.liquid limit=true %}
@@ -85,7 +85,7 @@ layout: default
     {% if page.selected_papers %}
       <section class="home-publications">
         <div class="section-head">
-          <h2>selected publications</h2>
+          <h2>Selected Publications</h2>
           <a class="section-more" href="{{ '/publications/' | relative_url }}">all publications <span aria-hidden="true">&#8599;</span></a>
         </div>
         {% include selected_papers.liquid %}
