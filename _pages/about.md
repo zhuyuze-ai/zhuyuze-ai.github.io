@@ -62,6 +62,25 @@ While this page is just a starting point, I aim to continuously enrich it as I g
 <div class="home-experience">
   <article class="exp-item">
     <div class="exp-logo-tile">
+      <img src="{{ '/assets/img/berkeley_logo.png' | relative_url }}" alt="UC Berkeley logo" loading="lazy" />
+    </div>
+    <div class="exp-main">
+      <div class="exp-row">
+        <h3 class="exp-title">Visiting Student Researcher</h3>
+        <span class="exp-date">Sep 2026 - Present</span>
+      </div>
+      <div class="exp-org">
+        Trevor Darrell Group, <a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">BAIR</a> &middot; UC Berkeley
+      </div>
+      <div class="exp-meta">Berkeley, California &middot; Advised by Roei Herzig</div>
+      <p class="exp-desc">
+        Investigating <strong>World-Action Model (WAM)</strong> representations and <strong>in-context learning</strong> for embodied agents, developing one-shot activation mechanisms that exploit a single demonstration to steer robot video generation and the resulting action prediction.
+      </p>
+    </div>
+  </article>
+
+  <article class="exp-item">
+    <div class="exp-logo-tile">
       <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
     </div>
     <div class="exp-main">
@@ -70,8 +89,9 @@ While this page is just a starting point, I aim to continuously enrich it as I g
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
       <div class="exp-org">FiveAges (中科第五纪) &middot; Beijing</div>
+      <div class="exp-meta">Advised by Yan Huang and Liang Wang</div>
       <p class="exp-desc">
-        Supervised by Prof. Yan Huang. Worked on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
+        Worked on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
       </p>
     </div>
   </article>
@@ -88,8 +108,9 @@ While this page is just a starting point, I aim to continuously enrich it as I g
       <div class="exp-org">
         <a href="http://www.ia.cas.cn/" target="_blank" rel="noopener">State Key Laboratory of Multimodal AI Systems, CASIA</a> &middot; Beijing
       </div>
+      <div class="exp-meta">Advised by Junyu Gao and Changsheng Xu</div>
       <p class="exp-desc">
-        Supervised by Assoc. Prof. Junyu Gao and Prof. Changsheng Xu. Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction, leading the full research cycle from idea proposal and codebase development to data analysis and manuscript writing. Co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
+        Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction, leading the full research cycle from idea proposal and codebase development to data analysis and manuscript writing. Co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
       </p>
     </div>
   </article>

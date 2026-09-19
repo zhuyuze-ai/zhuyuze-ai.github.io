@@ -364,7 +364,7 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
 .about-page .exp-org {
   font-size: 0.9rem;
   color: var(--global-text-color-light);
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.15rem;
 
   a {
     color: inherit;
@@ -374,6 +374,12 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
       text-decoration: none;
     }
   }
+}
+
+.about-page .exp-meta {
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+  margin-bottom: 0.45rem;
 }
 
 .about-page .exp-desc {
