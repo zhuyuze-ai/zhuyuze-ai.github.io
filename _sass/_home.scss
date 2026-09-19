@@ -334,6 +334,38 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
   background: #f2f4f8;
 }
 
+/* Dual-logo (双拼): FiveAges tucked upper-left, CASIA laid over the lower-right. */
+.about-page .exp-logo-tile--duo {
+  position: relative;
+  padding: 0;
+
+  .duo-logo {
+    position: absolute;
+    width: 64%;
+    height: 64%;
+    object-fit: contain;
+    border-radius: 0;
+  }
+
+  .duo-logo--back {
+    top: 7%;
+    left: 7%;
+    z-index: 1;
+  }
+
+  .duo-logo--front {
+    right: 5%;
+    bottom: 5%;
+    z-index: 2;
+    /* soft white halo so the front mark reads cleanly over the back one */
+    filter: drop-shadow(0 0 2.5px #fff) drop-shadow(0 0 2.5px #fff);
+  }
+}
+
+html[data-theme="dark"] .about-page .exp-logo-tile--duo .duo-logo--front {
+  filter: drop-shadow(0 0 2.5px #f2f4f8) drop-shadow(0 0 2.5px #f2f4f8);
+}
+
 .about-page .exp-main {
   min-width: 0;
 }

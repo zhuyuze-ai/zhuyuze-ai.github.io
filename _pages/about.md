@@ -64,7 +64,7 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">Trevor Darrell Group, <a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">BAIR</a> &middot; UC Berkeley</h3>
+        <h3 class="exp-title"><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">Berkeley AI Research (BAIR)</a> &middot; UC Berkeley</h3>
         <span class="exp-date">Sep 2026 - Present</span>
       </div>
       <div class="exp-meta">Berkeley, California &middot; Advised by Roei Herzig</div>
@@ -75,12 +75,13 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
   </article>
 
   <article class="exp-item">
-    <div class="exp-logo-tile">
-      <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
+    <div class="exp-logo-tile exp-logo-tile--duo">
+      <img class="duo-logo duo-logo--back" src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
+      <img class="duo-logo duo-logo--front" src="{{ '/assets/img/casia_logo.png' | relative_url }}" alt="CASIA logo" loading="lazy" />
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">FiveAges</h3>
+        <h3 class="exp-title">FiveAges / CASIA</h3>
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
       <div class="exp-meta">Beijing, China &middot; Advised by Yan Huang and Liang Wang</div>
@@ -92,7 +93,7 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
 
   <article class="exp-item">
     <div class="exp-logo-tile">
-      <img src="{{ '/assets/img/ucas_logo.jpg' | relative_url }}" alt="CASIA logo" loading="lazy" />
+      <img src="{{ '/assets/img/casia_logo.png' | relative_url }}" alt="CASIA logo" loading="lazy" />
     </div>
     <div class="exp-main">
       <div class="exp-row">
