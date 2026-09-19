@@ -80,7 +80,7 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">FiveAges (中科第五纪)</h3>
+        <h3 class="exp-title">FiveAges</h3>
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
       <div class="exp-meta">Beijing, China &middot; Advised by Yan Huang and Liang Wang</div>
