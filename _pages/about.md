@@ -17,7 +17,7 @@ profile:
 hero_links:
   - label: Email
     icon: fas fa-envelope
-    url: mailto:zhuyuze23@mails.ucas.ac.cn
+    url: mailto:yuzezhu141@gmail.com
 
   - label: GitHub
     icon: fab fa-github
@@ -50,7 +50,7 @@ latest_posts:
 
 I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). Since August 2026, I have been a visiting student in Computer Science at the University of California, Berkeley. My research interests lie in Embodied AI, with a specific focus on Vision-Language Action (VLA).
 
-Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**, I spent three years in **Beijing** for my studies and am now based in **Berkeley, California**, and I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:zhuyuze23@mails.ucas.ac.cn). Emails from anywhere are warmly welcome!
+Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**, I spent three years in **Beijing** for my studies and am now based in **Berkeley, California**, and I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:yuzezhu141@gmail.com). Emails from anywhere are warmly welcome!
 
 <div class="section-head">
   <h2 class="home-section-title" id="experience">Experience</h2>
@@ -75,18 +75,12 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
   </article>
 
   <article class="exp-item">
-    <div class="exp-logo-tile exp-logo-tile--duo">
-      <div class="duo-pane duo-pane--upper">
-        <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
-      </div>
-      <div class="duo-pane duo-pane--lower">
-        <img src="{{ '/assets/img/casia_logo.png' | relative_url }}" alt="CASIA logo" loading="lazy" />
-      </div>
-      <span class="duo-divider" aria-hidden="true"></span>
+    <div class="exp-logo-tile">
+      <img src="{{ '/assets/img/fiveages_casia_logo.png' | relative_url }}" alt="FiveAges / CASIA logo" loading="lazy" />
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">FiveAges / CASIA</h3>
+        <h3 class="exp-title">FiveAges/CASIA</h3>
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
       <div class="exp-meta">Beijing, China &middot; Advised by Yan Huang and Liang Wang</div>

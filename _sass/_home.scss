@@ -334,61 +334,6 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
   background: #f2f4f8;
 }
 
-/* Dual-logo (双拼): a bottom-left -> top-right diagonal splits the tile,
- * FiveAges in the upper-left half, CASIA in the lower-right half. */
-.about-page .exp-logo-tile--duo {
-  position: relative;
-  padding: 0;
-  overflow: hidden;
-
-  .duo-pane {
-    position: absolute;
-    inset: 0;
-
-    img {
-      position: absolute;
-      width: 50%;
-      height: 50%;
-      object-fit: contain;
-      border-radius: 0;
-    }
-  }
-
-  /* upper-left triangle */
-  .duo-pane--upper {
-    clip-path: polygon(0 0, 100% 0, 0 100%);
-
-    img {
-      top: 8%;
-      left: 6%;
-    }
-  }
-
-  /* lower-right triangle */
-  .duo-pane--lower {
-    clip-path: polygon(100% 0, 100% 100%, 0 100%);
-
-    img {
-      right: 6%;
-      bottom: 8%;
-    }
-  }
-
-  /* thin seam running bottom-left -> top-right */
-  .duo-divider {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background: linear-gradient(
-      to bottom right,
-      transparent calc(50% - 0.6px),
-      var(--global-divider-color) calc(50% - 0.6px),
-      var(--global-divider-color) calc(50% + 0.6px),
-      transparent calc(50% + 0.6px)
-    );
-  }
-}
-
 .about-page .exp-main {
   min-width: 0;
 }
