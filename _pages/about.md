@@ -76,8 +76,13 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
 
   <article class="exp-item">
     <div class="exp-logo-tile exp-logo-tile--duo">
-      <img class="duo-logo duo-logo--back" src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
-      <img class="duo-logo duo-logo--front" src="{{ '/assets/img/casia_logo.png' | relative_url }}" alt="CASIA logo" loading="lazy" />
+      <div class="duo-pane duo-pane--upper">
+        <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
+      </div>
+      <div class="duo-pane duo-pane--lower">
+        <img src="{{ '/assets/img/casia_logo.png' | relative_url }}" alt="CASIA logo" loading="lazy" />
+      </div>
+      <span class="duo-divider" aria-hidden="true"></span>
     </div>
     <div class="exp-main">
       <div class="exp-row">

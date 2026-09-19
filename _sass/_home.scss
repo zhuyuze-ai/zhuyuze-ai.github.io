@@ -334,36 +334,59 @@ html[data-theme="dark"] .about-page .exp-logo-tile {
   background: #f2f4f8;
 }
 
-/* Dual-logo (双拼): FiveAges tucked upper-left, CASIA laid over the lower-right. */
+/* Dual-logo (双拼): a bottom-left -> top-right diagonal splits the tile,
+ * FiveAges in the upper-left half, CASIA in the lower-right half. */
 .about-page .exp-logo-tile--duo {
   position: relative;
   padding: 0;
+  overflow: hidden;
 
-  .duo-logo {
+  .duo-pane {
     position: absolute;
-    width: 64%;
-    height: 64%;
-    object-fit: contain;
-    border-radius: 0;
+    inset: 0;
+
+    img {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      object-fit: contain;
+      border-radius: 0;
+    }
   }
 
-  .duo-logo--back {
-    top: 7%;
-    left: 7%;
-    z-index: 1;
+  /* upper-left triangle */
+  .duo-pane--upper {
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+
+    img {
+      top: 8%;
+      left: 6%;
+    }
   }
 
-  .duo-logo--front {
-    right: 5%;
-    bottom: 5%;
-    z-index: 2;
-    /* soft white halo so the front mark reads cleanly over the back one */
-    filter: drop-shadow(0 0 2.5px #fff) drop-shadow(0 0 2.5px #fff);
-  }
-}
+  /* lower-right triangle */
+  .duo-pane--lower {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
 
-html[data-theme="dark"] .about-page .exp-logo-tile--duo .duo-logo--front {
-  filter: drop-shadow(0 0 2.5px #f2f4f8) drop-shadow(0 0 2.5px #f2f4f8);
+    img {
+      right: 6%;
+      bottom: 8%;
+    }
+  }
+
+  /* thin seam running bottom-left -> top-right */
+  .duo-divider {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(
+      to bottom right,
+      transparent calc(50% - 0.6px),
+      var(--global-divider-color) calc(50% - 0.6px),
+      var(--global-divider-color) calc(50% + 0.6px),
+      transparent calc(50% + 0.6px)
+    );
+  }
 }
 
 .about-page .exp-main {
