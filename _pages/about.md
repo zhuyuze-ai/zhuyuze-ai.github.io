@@ -76,11 +76,11 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
 
   <article class="exp-item">
     <div class="exp-logo-tile">
-      <img src="{{ '/assets/img/fiveages_casia_logo.png' | relative_url }}" alt="FiveAges / CASIA logo" loading="lazy" />
+      <img src="{{ '/assets/img/fiveages_logo.png' | relative_url }}" alt="FiveAges logo" loading="lazy" />
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">FiveAges/CASIA</h3>
+        <h3 class="exp-title">FiveAges</h3>
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
       <div class="exp-meta">Beijing, China &middot; Advised by Yan Huang and Liang Wang</div>
