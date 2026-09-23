@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-cv",
           title: "CV",
-          description: "Yuze Zhu&#39;s Curriculum Vitae - Undergraduate Researcher in Embodied AI at UCAS, currently a Visiting Student at UC Berkeley",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
