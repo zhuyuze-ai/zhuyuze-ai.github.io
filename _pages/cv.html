@@ -1,0 +1,28 @@
+---
+layout: null
+permalink: /cv/
+title: CV
+nav: true
+nav_order: 5
+sitemap: false
+cv_pdf: /assets/pdf/Yuze_Zhu_CV.pdf
+---
+
+{%- assign cv_url = page.cv_pdf | relative_url -%}
+
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="utf-8" />
+    <title>CV | {{ site.first_name }} {{ site.last_name }}</title>
+    <meta name="robots" content="noindex" />
+    <link rel="canonical" href="{{ page.cv_pdf | absolute_url }}" />
+    <meta http-equiv="refresh" content="0; url={{ cv_url }}" />
+    <script>
+      window.location.replace("{{ cv_url }}");
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="{{ cv_url }}">my CV (PDF)</a>&hellip;</p>
+  </body>
+</html>

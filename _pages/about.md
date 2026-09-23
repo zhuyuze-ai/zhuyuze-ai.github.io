@@ -48,7 +48,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). I am currently a visiting student at UC Berkeley, working at [Berkeley AI Research (BAIR)](https://bair.berkeley.edu/) under the supervision of [Roei Herzig](https://roeiherz.github.io/).
+I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). I am currently a visiting student at UC Berkeley, working at <a class="inst-link" href="https://bair.berkeley.edu/"><img class="inst-icon" src="{{ '/assets/img/bair_logo.svg' | relative_url }}" alt="" aria-hidden="true" />Berkeley AI Research (BAIR)</a> under the supervision of [Roei Herzig](https://roeiherz.github.io/).
 
 My long-term goal is to build general-purpose robots that understand and interact with the physical world. I am particularly interested in **representation learning** and **spatial intelligence**, studying how robots can develop an intuitive understanding of 3D space to support robust generalization across tasks and environments. I am currently **seeking a PhD position starting in Fall 2027**, and am happy to discuss potential research fit and collaboration opportunities.
 
@@ -56,7 +56,7 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
 
 <div class="section-head">
   <h2 class="home-section-title" id="experience">Experience</h2>
-  <a class="section-more" href="{{ '/cv/' | relative_url }}">full CV <span aria-hidden="true">&#8599;</span></a>
+  <a class="section-more" href="{{ '/assets/pdf/Yuze_Zhu_CV.pdf' | relative_url }}" target="_blank" rel="noopener">full CV <span aria-hidden="true">&#8599;</span></a>
 </div>
 
 <div class="home-experience">
@@ -67,11 +67,11 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
     <div class="exp-main">
       <div class="exp-row">
         <h3 class="exp-title"><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">Berkeley AI Research (BAIR)</a> &middot; UC Berkeley</h3>
-        <span class="exp-date">Sep 2026 - Present</span>
+        <span class="exp-date">Aug 2026 - Present</span>
       </div>
-      <div class="exp-meta">Berkeley, California &middot; Advised by <a href="https://roeiherz.github.io/" target="_blank" rel="noopener">Roei Herzig</a></div>
+      <div class="exp-meta">Berkeley, California &middot; Visiting Student &middot; Advised by <a href="https://roeiherz.github.io/" target="_blank" rel="noopener">Roei Herzig</a> (Darrell Group)</div>
       <p class="exp-desc">
-        Investigating <strong>World-Action Model (WAM)</strong> representations and <strong>in-context learning</strong> for embodied agents, developing one-shot activation mechanisms that exploit a single demonstration to steer robot video generation and the resulting action prediction.
+        Investigating learned representations in <strong>World Action Models (WAMs)</strong>, with a focus on how task-relevant information emerges and supports generalization and adaptation in robotic manipulation. Also exploring <strong>human-video in-context learning</strong>, studying how representations from demonstrations can be aligned with the robot's current state to guide future video and action generation.
       </p>
     </div>
   </article>
@@ -82,12 +82,12 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
     </div>
     <div class="exp-main">
       <div class="exp-row">
-        <h3 class="exp-title">FiveAges</h3>
+        <h3 class="exp-title">FiveAges (Embodied AI Startup) &amp; CASIA</h3>
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
-      <div class="exp-meta">Beijing, China &middot; Advised by Yan Huang and Liang Wang</div>
+      <div class="exp-meta">Beijing, China &middot; Algorithm Intern &middot; Advised by <a href="https://yanrockhuang.github.io/" target="_blank" rel="noopener">Yan Huang</a> and Liang Wang</div>
       <p class="exp-desc">
-        Developed <strong>BridgeVLA++</strong>, a memory-augmented 3D VLA framework for generalizable and long-horizon robotic manipulation.
+        Co-developed <strong>BridgeVLA++</strong>, a memory-augmented Vision-Language-Action framework for generalizable 3D manipulation, and led its simulation and real-robot evaluation; co-first-authored the manuscript <strong>submitted to IEEE TPAMI</strong>.
       </p>
     </div>
   </article>
@@ -103,9 +103,9 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
         </h3>
         <span class="exp-date">Jul 2025 - Jan 2026</span>
       </div>
-      <div class="exp-meta">Beijing, China &middot; Advised by Junyu Gao and Changsheng Xu</div>
+      <div class="exp-meta">Beijing, China &middot; Research Intern &middot; Advised by Junyu Gao and Changsheng Xu</div>
       <p class="exp-desc">
-        Conducted research on <strong>Vision-Language Navigation (VLN)</strong> with a focus on self-correction, leading the full research cycle from idea proposal and codebase development to data analysis and manuscript writing. Co-authored a paper (second author) <strong>accepted by ICML 2026</strong>.
+        Developed a closed-loop self-correction framework for continuous <strong>Vision-Language Navigation (VLN)</strong> using world-model foresight and environmental feedback, and led the experimental implementation and evaluation on R2R-CE and RxR-CE; resulted in a second-author paper <strong>accepted at ICML 2026</strong>.
       </p>
     </div>
   </article>
