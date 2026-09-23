@@ -48,7 +48,9 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). Since August 2026, I have been a visiting student in Computer Science at the University of California, Berkeley. My research interests lie in Embodied AI, with a specific focus on Vision-Language Action (VLA).
+I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). I am currently a visiting student at UC Berkeley, working at [Berkeley AI Research (BAIR)](https://bair.berkeley.edu/) under the supervision of [Roei Herzig](https://roeiherz.github.io/).
+
+My long-term goal is to build general-purpose robots that understand and interact with the physical world. I am particularly interested in **representation learning** and **spatial intelligence**, studying how robots can develop an intuitive understanding of 3D space to support robust generalization across tasks and environments. I am currently **seeking a PhD position starting in Fall 2027**, and am happy to discuss potential research fit and collaboration opportunities.
 
 Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**, I spent three years in **Beijing** for my studies and am now based in **Berkeley, California**, and I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:yuzezhu141@gmail.com). Emails from anywhere are warmly welcome!
 
@@ -67,7 +69,7 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
         <h3 class="exp-title"><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">Berkeley AI Research (BAIR)</a> &middot; UC Berkeley</h3>
         <span class="exp-date">Sep 2026 - Present</span>
       </div>
-      <div class="exp-meta">Berkeley, California &middot; Advised by Roei Herzig</div>
+      <div class="exp-meta">Berkeley, California &middot; Advised by <a href="https://roeiherz.github.io/" target="_blank" rel="noopener">Roei Herzig</a></div>
       <p class="exp-desc">
         Investigating <strong>World-Action Model (WAM)</strong> representations and <strong>in-context learning</strong> for embodied agents, developing one-shot activation mechanisms that exploit a single demonstration to steer robot video generation and the resulting action prediction.
       </p>
@@ -85,7 +87,7 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
       </div>
       <div class="exp-meta">Beijing, China &middot; Advised by Yan Huang and Liang Wang</div>
       <p class="exp-desc">
-        Worked on embodied intelligence algorithms, with a focus on <strong>Vision-Language-Action (VLA)</strong> models and bridging academic research with real-world robotic deployment.
+        Developed <strong>BridgeVLA++</strong>, a memory-augmented 3D VLA framework for generalizable and long-horizon robotic manipulation.
       </p>
     </div>
   </article>
