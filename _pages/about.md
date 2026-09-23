@@ -48,7 +48,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). I am currently a visiting student at UC Berkeley, working at <a class="inst-link" href="https://bair.berkeley.edu/"><img class="inst-icon" src="{{ '/assets/img/bair_logo.svg' | relative_url }}" alt="" aria-hidden="true" />Berkeley AI Research (BAIR)</a>, advised by [Roei Herzig](https://roeiherz.github.io/).
+I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). I am currently a visiting student at UC Berkeley, working at [Berkeley AI Research (BAIR)](https://bair.berkeley.edu/), advised by [Roei Herzig](https://roeiherz.github.io/).
 
 My long-term goal is to build general-purpose robots that understand and interact with the physical world. I am particularly interested in **representation learning** and **spatial intelligence**, studying how robots can develop an intuitive understanding of 3D space to support robust generalization across tasks and environments. I am currently **seeking a PhD position starting in Fall 2027**, and am happy to discuss potential research fit and collaboration opportunities.
 

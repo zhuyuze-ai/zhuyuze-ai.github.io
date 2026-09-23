@@ -220,27 +220,6 @@ body::before {
 }
 
 /* ---------------------------------------------------------------------------
- * Inline institution marks in the intro text.
- * ------------------------------------------------------------------------- */
-.about-page .inst-link {
-  white-space: nowrap;
-}
-
-.about-page .inst-icon {
-  height: 1.15em;
-  width: auto;
-  margin-right: 0.3em;
-  vertical-align: -0.2em;
-}
-
-/* the navy logo disappears on a dark background, so give it a light chip */
-html[data-theme="dark"] .about-page .inst-icon {
-  padding: 1px 2px;
-  background: #f2f4f8;
-  border-radius: 3px;
-}
-
-/* ---------------------------------------------------------------------------
  * News: a quiet list, not cards: mono date column, hairlines between rows.
  * ------------------------------------------------------------------------- */
 .about-page .home-news .news {
