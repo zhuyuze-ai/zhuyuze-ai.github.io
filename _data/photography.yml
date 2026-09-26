@@ -1,6 +1,7 @@
-# Photos shown on /photography/, newest first.
+# Photos shown on /photography/, in display order.
 # category: portrait | landscape
-# title: optional line shown above the date and place
+# title: optional, prepended to the caption as "Title · date, place"
+# short: optional shorter caption for the grid; the lightbox shows the full one
 
 - image: assets/img/photography/ucb-sep-2026.jpg
   category: portrait
@@ -8,24 +9,16 @@
   height: 2400
   date: September 2026
   place: UC Berkeley, California # 加州大学伯克利分校, Sather Tower
+  short: September 2026, Berkeley
   alt: Portrait in a denim jacket on a stone balustrade in front of Sather Tower under a deep blue sky
 
-- image: assets/img/photography/moon-sep-2025.jpg
-  category: landscape
-  width: 1620
-  height: 1080
-  title: Blood Moon # 血月 (total lunar eclipse)
-  date: September 2025
-  place: UCAS, Beijing # 中国科学院大学, 北京
-  alt: A red-orange blood moon during a total lunar eclipse against a dark starry sky
-
-- image: assets/img/photography/world-trade-mar-2025.jpg
-  category: landscape
-  width: 1080
-  height: 1620
-  date: March 2025
-  place: China World Trade Center, Beijing # 国贸, 北京
-  alt: Pink magnolia blossoms in front of the glass towers of China World Trade Center under a blue sky
+- image: assets/img/photography/autumn-nov-2024.jpg
+  category: portrait
+  width: 2400
+  height: 1599
+  date: November 2024
+  place: Beijing # 北京
+  alt: Portrait in sunglasses and a denim jacket on a path lined with golden ginkgo trees
 
 - image: assets/img/photography/westlake-feb-2025.jpg
   category: landscape
@@ -42,15 +35,26 @@
   title: Golden Light Through the Seventeen-Arch Bridge # 金光穿洞
   date: December 2024
   place: Summer Palace, Beijing # 颐和园, 北京
+  short: December 2024, Summer Palace, Beijing
   alt: Sunset light glowing golden through the arches of the Seventeen-Arch Bridge, reflected in the icy lake
 
-- image: assets/img/photography/autumn-nov-2024.jpg
-  category: portrait
-  width: 2400
-  height: 1599
-  date: November 2024
-  place: Beijing # 北京
-  alt: Portrait in sunglasses and a denim jacket on a path lined with golden ginkgo trees
+- image: assets/img/photography/world-trade-mar-2025.jpg
+  category: landscape
+  width: 1080
+  height: 1620
+  date: March 2025
+  place: China World Trade Center, Beijing # 国贸, 北京
+  short: March 2025, Beijing
+  alt: Pink magnolia blossoms in front of the glass towers of China World Trade Center under a blue sky
+
+- image: assets/img/photography/moon-sep-2025.jpg
+  category: landscape
+  width: 1620
+  height: 1080
+  title: Blood Moon # 血月 (total lunar eclipse)
+  date: September 2025
+  place: UCAS, Beijing # 中国科学院大学, 北京
+  alt: A red-orange blood moon during a total lunar eclipse against a dark starry sky
 
 - image: assets/img/photography/olympic-nov-2023.jpg
   category: portrait
@@ -65,5 +69,5 @@
   width: 2400
   height: 1600
   date: October 2021
-  place: Hangzhou No.2 High School of Zhejiang Province, Hangzhou # 浙江省杭州第二中学, 杭州
+  place: Hangzhou No.2 High School, Hangzhou # 浙江省杭州第二中学, 杭州
   alt: Portrait holding a camera up to the eye on a sunlit school sports field
