@@ -71,7 +71,7 @@
 }
 
 .photo-item {
-  flex: var(--ar) 1 calc(var(--ar) * var(--row-h));
+  flex: 1 1 240px;
   min-width: 0;
   margin: 0 0 10px;
 
@@ -140,23 +140,18 @@
   }
 }
 
-// Lightbox: translucent black backdrop, white caption below the photo.
+// Lightbox, after XD-QIN/astro-photo-folio: translucent black backdrop, white
+// caption below the photo. photography.js sizes the image in pixels, because
+// the site's CSS minifier breaks calc() expressions that use var().
 .photo-lightbox {
-  --lb-pad: clamp(1rem, 4vw, 3rem);
-  --lb-cap: 0rem;
-  --lb-h: min(85vh, calc(100vh - 2 * var(--lb-pad) - var(--lb-cap)));
   position: fixed;
   inset: 0;
   z-index: 1100;
   display: none;
   align-items: center;
   justify-content: center;
-  padding: var(--lb-pad);
+  padding: clamp(1rem, 4vw, 3rem);
   background: rgba(0, 0, 0, 0.88);
-
-  &.has-caption {
-    --lb-cap: 2.6rem;
-  }
 
   &.is-open {
     display: flex;
@@ -174,16 +169,16 @@
 }
 
 .photo-lightbox-img {
-  --ar: 1.5;
-  --pw: 2400;
   flex: none;
-  width: min(100%, calc(var(--lb-h) * var(--ar)), calc(var(--pw) * 1px));
-  height: auto;
-  aspect-ratio: var(--ar);
+  max-width: 100%;
   object-fit: contain;
   box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45);
   user-select: none;
   -webkit-user-drag: none;
+
+  &.is-loading {
+    visibility: hidden;
+  }
 }
 
 .photo-lightbox-caption {

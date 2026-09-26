@@ -100,40 +100,73 @@
 
   let visible = [];
   let index = -1;
+  let seq = 0; // invalidates a pending full-size swap when the photo changes
   let lastFocus = null;
 
+  // Fit the photo inside the backdrop padding, leaving room for the caption
+  // and never exceeding 85% of the viewport height or its own pixel size. The
+  // box is fixed from the aspect ratio, so the small preview and the full
+  // image occupy exactly the same space.
+  function fit() {
+    if (index < 0) return;
+    const d = visible[index].querySelector(".photo-tile").dataset;
+    const w = Number(d.w);
+    const h = Number(d.h);
+    const pad = parseFloat(getComputedStyle(lightbox).paddingTop) || 0;
+    const cap = text.textContent ? text.offsetHeight + parseFloat(getComputedStyle(text).marginTop) : 0;
+    const maxW = lightbox.clientWidth - 2 * pad;
+    const maxH = Math.min(window.innerHeight * 0.85, lightbox.clientHeight - 2 * pad - cap);
+    const scale = Math.min(maxW / w, maxH / h, 1);
+    img.style.width = `${Math.floor(w * scale)}px`;
+    img.style.height = `${Math.floor(h * scale)}px`;
+  }
+
   function show(i) {
-    index = (i + visible.length) % visible.length;
+    const next = (i + visible.length) % visible.length;
+    const same = next === index && img.getAttribute("src");
+    index = next;
     const tile = visible[index].querySelector(".photo-tile");
     const d = tile.dataset;
 
-    img.style.setProperty("--ar", String(Number(d.w) / Number(d.h)));
-    img.style.setProperty("--pw", d.w);
-    // Show the already-loaded thumbnail first, then swap in the full image.
-    const thumb = tile.querySelector(".photo-img");
-    img.src = (thumb && thumb.currentSrc) || d.full;
     img.alt = d.alt || "";
-    const full = new Image();
-    full.onload = () => {
-      if (visible[index] && visible[index].querySelector(".photo-tile") === tile) img.src = d.full;
-    };
-    full.src = d.full;
-
     text.textContent = d.caption || "";
-    lightbox.classList.toggle("has-caption", Boolean(d.caption));
+    fit();
+    if (same) return;
 
-    const multiple = visible.length > 1;
-    prevBtn.hidden = !multiple;
-    nextBtn.hidden = !multiple;
+    // As in XD-QIN/astro-photo-folio: show the rendition the grid already
+    // downloaded right away (kept hidden until it loads, so the previous photo
+    // never flashes), then swap in the full image once it has decoded.
+    const ticket = ++seq;
+    const thumb = tile.querySelector(".photo-img");
+    const preview = (thumb && thumb.currentSrc) || "";
+    img.classList.add("is-loading");
+    img.src = preview || d.full;
+    if (!preview || preview === d.full) return;
+
+    const full = new Image();
+    full.src = d.full;
+    const apply = () => {
+      if (ticket === seq) img.src = d.full;
+    };
+    if (full.decode) full.decode().then(apply, () => {});
+    else full.onload = apply;
   }
+
+  const reveal = () => img.classList.remove("is-loading");
+  img.addEventListener("load", reveal);
+  img.addEventListener("error", reveal);
 
   function open(item) {
     visible = items.filter((it) => !it.hidden);
     lastFocus = document.activeElement;
-    show(visible.indexOf(item));
+    const multiple = visible.length > 1;
+    prevBtn.hidden = !multiple;
+    nextBtn.hidden = !multiple;
+
     lightbox.classList.add("is-open");
     lightbox.setAttribute("aria-hidden", "false");
     document.body.classList.add("photo-lightbox-open");
+    show(visible.indexOf(item));
     closeBtn.focus();
   }
 
@@ -141,9 +174,15 @@
     lightbox.classList.remove("is-open");
     lightbox.setAttribute("aria-hidden", "true");
     document.body.classList.remove("photo-lightbox-open");
+    seq++;
+    index = -1;
     img.removeAttribute("src");
     if (lastFocus) lastFocus.focus();
   }
+
+  window.addEventListener("resize", () => {
+    if (lightbox.classList.contains("is-open")) fit();
+  });
 
   items.forEach((item) => item.querySelector(".photo-tile").addEventListener("click", () => open(item)));
 
