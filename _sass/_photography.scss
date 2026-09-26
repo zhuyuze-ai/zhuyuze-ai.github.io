@@ -41,24 +41,39 @@
   }
 }
 
-// Justified rows: each item grows in proportion to its aspect ratio, so every
-// photo in a row ends up the same height.
+// Justified rows, as in rockem/astro-photography-portfolio: photography.js
+// computes each row so its photos share one height and fill the full width,
+// then positions every item absolutely. The flex rules are the no-JS fallback.
 .photo-grid {
-  --row-h: 260px;
+  --row-h: 280px;
+  --cap-h: 1.9rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.25rem 0.75rem;
+  gap: 0 10px;
 
-  &::after {
-    content: "";
-    flex-grow: 999;
+  &.is-justified {
+    display: block;
+    position: relative;
+
+    .photo-item {
+      position: absolute;
+    }
+
+    .photo-tile {
+      height: var(--tile-h);
+    }
+
+    .photo-img {
+      height: 100%;
+      aspect-ratio: auto;
+    }
   }
 }
 
 .photo-item {
   flex: var(--ar) 1 calc(var(--ar) * var(--row-h));
   min-width: 0;
-  margin: 0;
+  margin: 0 0 10px;
 
   &[hidden] {
     display: none;
@@ -77,6 +92,7 @@
 
   picture {
     display: block;
+    height: 100%;
   }
 
   &:hover .photo-img,
@@ -101,26 +117,26 @@
   -webkit-user-drag: none;
 }
 
+// One line, exactly as wide as the photo above it; long text ends in "…".
 .photo-caption {
-  margin-top: 0.5rem;
+  height: var(--cap-h);
+  padding-top: 0.4rem;
+  overflow: hidden;
   color: var(--global-text-color-light);
   font-size: 0.85rem;
   line-height: 1.4;
   letter-spacing: 0.01em;
-
-  span {
-    display: block;
-  }
-}
-
-.photo-caption-title {
-  color: var(--global-text-color);
-  font-weight: 500;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 576px) {
   .photo-grid {
     --row-h: 180px;
+  }
+
+  .photo-caption {
+    font-size: 0.78rem;
   }
 }
 
@@ -139,7 +155,7 @@
   background: rgba(0, 0, 0, 0.88);
 
   &.has-caption {
-    --lb-cap: 4.2rem;
+    --lb-cap: 2.6rem;
   }
 
   &.is-open {
@@ -171,23 +187,15 @@
 }
 
 .photo-lightbox-caption {
-  max-width: 60ch;
+  max-width: 100%;
   margin-top: 0.9rem;
   color: #ececec;
   font-size: 0.95rem;
   line-height: 1.45;
   text-align: center;
 
-  span {
-    display: block;
-  }
-
-  span[hidden] {
+  &:empty {
     display: none;
-  }
-
-  .photo-caption-title {
-    color: #fff;
   }
 }
 
