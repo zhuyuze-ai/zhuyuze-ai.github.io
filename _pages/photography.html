@@ -1,0 +1,72 @@
+---
+layout: page
+title: photography
+permalink: /photography/
+description: Portraits and landscapes, mostly from Beijing and Hangzhou.
+nav: true
+nav_order: 6
+---
+
+<div class="photo-filters" role="group" aria-label="Filter photos">
+  <button type="button" class="photo-filter is-active" data-filter="all" aria-pressed="true">All</button>
+  <button type="button" class="photo-filter" data-filter="portrait" aria-pressed="false">Portraits</button>
+  <button type="button" class="photo-filter" data-filter="landscape" aria-pressed="false">Landscapes</button>
+</div>
+
+<section class="photo-grid" aria-label="Photographs">
+  {% for photo in site.data.photography %} {% assign img_path = photo.image | remove: '.jpg' | remove: '.jpeg' | remove: '.png' %} {% assign caption =
+  photo.place %} {% if photo.date and photo.date != "" %} {% assign caption = photo.date | append: ', ' | append: photo.place %} {% endif %}
+  <figure class="photo-item" data-category="{{ photo.category }}" style="--ar: {{ photo.width | times: 1.0 | divided_by: photo.height }}">
+    <button
+      type="button"
+      class="photo-tile"
+      aria-label="{{ photo.alt }}, view larger"
+      data-full="{{ photo.image | relative_url }}"
+      data-w="{{ photo.width }}"
+      data-h="{{ photo.height }}"
+      data-alt="{{ photo.alt }}"
+      data-title="{{ photo.title }}"
+      data-caption="{{ caption }}"
+    >
+      <picture>
+        {% if site.imagemagick.enabled %}
+        <source
+          srcset="{% for i in site.imagemagick.widths %}{{ img_path | relative_url }}-{{ i }}.webp {{ i }}w,{% endfor %}"
+          sizes="(max-width: 576px) 92vw, 420px"
+          type="image/webp"
+        />
+        {% endif %}
+        <img
+          class="photo-img"
+          src="{{ photo.image | relative_url }}"
+          width="{{ photo.width }}"
+          height="{{ photo.height }}"
+          alt="{{ photo.alt }}"
+          loading="{% if forloop.index <= 4 %}eager{% else %}lazy{% endif %}"
+          decoding="async"
+          draggable="false"
+        />
+      </picture>
+    </button>
+    <figcaption class="photo-caption">
+      {% if photo.title %}<span class="photo-caption-title">{{ photo.title }}</span>{% endif %}
+      <span>{{ caption }}</span>
+    </figcaption>
+  </figure>
+  {% endfor %}
+</section>
+
+<div class="photo-lightbox" id="photo-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <button class="photo-lightbox-close" type="button" aria-label="Close viewer">&times;</button>
+  <button class="photo-lightbox-nav photo-lightbox-prev" type="button" aria-label="Previous photo">&#8249;</button>
+  <figure class="photo-lightbox-figure">
+    <img class="photo-lightbox-img" alt="" draggable="false" />
+    <figcaption class="photo-lightbox-caption">
+      <span class="photo-caption-title"></span>
+      <span class="photo-lightbox-text"></span>
+    </figcaption>
+  </figure>
+  <button class="photo-lightbox-nav photo-lightbox-next" type="button" aria-label="Next photo">&#8250;</button>
+</div>
+
+<script defer src="{{ '/assets/js/photography.js' | relative_url | bust_file_cache }}"></script>

@@ -1,0 +1,239 @@
+/*******************************************************************************
+ * Photography gallery (/photography/)
+ ******************************************************************************/
+
+.photo-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0 2rem;
+}
+
+.photo-filter {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    background-color 0.2s;
+
+  &:hover {
+    border-color: var(--global-text-color-light);
+    color: var(--global-text-color);
+  }
+
+  &.is-active {
+    border-color: var(--global-text-color);
+    background: var(--global-text-color);
+    color: var(--global-bg-color);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 2px;
+  }
+}
+
+// Justified rows: each item grows in proportion to its aspect ratio, so every
+// photo in a row ends up the same height.
+.photo-grid {
+  --row-h: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 0.75rem;
+
+  &::after {
+    content: "";
+    flex-grow: 999;
+  }
+}
+
+.photo-item {
+  flex: var(--ar) 1 calc(var(--ar) * var(--row-h));
+  min-width: 0;
+  margin: 0;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.photo-tile {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--global-divider-color);
+  cursor: zoom-in;
+
+  picture {
+    display: block;
+  }
+
+  &:hover .photo-img,
+  &:focus-visible .photo-img {
+    transform: scale(1.03);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-text-color);
+    outline-offset: 3px;
+  }
+}
+
+.photo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--ar);
+  object-fit: cover;
+  transition: transform 0.7s var(--global-ease-out);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.photo-caption {
+  margin-top: 0.5rem;
+  color: var(--global-text-color-light);
+  font-size: 0.85rem;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+
+  span {
+    display: block;
+  }
+}
+
+.photo-caption-title {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
+@media (max-width: 576px) {
+  .photo-grid {
+    --row-h: 180px;
+  }
+}
+
+// Lightbox: translucent black backdrop, white caption below the photo.
+.photo-lightbox {
+  --lb-pad: clamp(1rem, 4vw, 3rem);
+  --lb-cap: 0rem;
+  --lb-h: min(85vh, calc(100vh - 2 * var(--lb-pad) - var(--lb-cap)));
+  position: fixed;
+  inset: 0;
+  z-index: 1100;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: var(--lb-pad);
+  background: rgba(0, 0, 0, 0.88);
+
+  &.has-caption {
+    --lb-cap: 4.2rem;
+  }
+
+  &.is-open {
+    display: flex;
+  }
+}
+
+.photo-lightbox-figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.photo-lightbox-img {
+  --ar: 1.5;
+  --pw: 2400;
+  flex: none;
+  width: min(100%, calc(var(--lb-h) * var(--ar)), calc(var(--pw) * 1px));
+  height: auto;
+  aspect-ratio: var(--ar);
+  object-fit: contain;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.45);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.photo-lightbox-caption {
+  max-width: 60ch;
+  margin-top: 0.9rem;
+  color: #ececec;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: center;
+
+  span {
+    display: block;
+  }
+
+  span[hidden] {
+    display: none;
+  }
+
+  .photo-caption-title {
+    color: #fff;
+  }
+}
+
+.photo-lightbox-close,
+.photo-lightbox-nav {
+  position: absolute;
+  padding: 0.4rem 0.7rem;
+  border: 0;
+  background: transparent;
+  color: #fff;
+  line-height: 1;
+  opacity: 0.75;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 1;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+.photo-lightbox-close {
+  top: 0.6rem;
+  right: 1rem;
+  font-size: 2.4rem;
+}
+
+.photo-lightbox-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(2.4rem, 6vw, 3.6rem);
+}
+
+.photo-lightbox-prev {
+  left: 0.2rem;
+}
+
+.photo-lightbox-next {
+  right: 0.2rem;
+}
+
+body.photo-lightbox-open {
+  overflow: hidden;
+}
