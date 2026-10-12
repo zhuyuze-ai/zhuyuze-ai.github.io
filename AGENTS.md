@@ -72,6 +72,25 @@ When modifying `_config.yml`, these **must be updated together**:
 | Liquid templates (`_includes/`, `_layouts/`)  | [liquid-templates.instructions.md](.github/instructions/liquid-templates.instructions.md)       |
 | JavaScript (`_scripts/`)                      | [javascript-scripts.instructions.md](.github/instructions/javascript-scripts.instructions.md)   |
 
+## Cursor Cloud specific instructions
+
+Cloud Agents use the native toolchain installed on the image: Ruby 3.3.5, Bundler 4.0.4, ImageMagick, Jupyter/nbconvert, Node.js, and Prettier. Gems live in `/usr/local/bundle` (`bundle config get path`).
+
+The dev server listens on port 8080. If it is not already up:
+
+```bash
+cd /workspace
+JEKYLL_ENV=development bundle exec jekyll serve --host 0.0.0.0 --port 8080 --livereload --livereload-port 35729 --force_polling
+```
+
+Open http://localhost:8080. A production check matches CI:
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+purgecss -c purgecss.config.js
+npx prettier . --check
+```
+
 ## Common Issues
 
 For troubleshooting, see:
