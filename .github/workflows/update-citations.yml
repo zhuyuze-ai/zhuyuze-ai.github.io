@@ -7,19 +7,23 @@ on:
     - cron: "0 0 * * 5" # Friday
   workflow_dispatch:
 
+# Needed so the job can push the refreshed _data/citations.yml back to the repo.
+permissions:
+  contents: write
+
 jobs:
   update-citations:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
       # See CUSTOMIZE.md for details on how to set up PAT for triggering subsequent workflows
       #        with:
       #          token: ${{ secrets.PAT }}
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v7
         with:
           python-version: "3.13"
 
