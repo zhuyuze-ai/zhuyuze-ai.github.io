@@ -36,7 +36,7 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}{% if page.profile.portraits %} has-portrait-stack{% endif %}">
+      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.portraits %}
           {% include portrait_stack.liquid portraits=page.profile.portraits caption=page.profile.viewer_caption %}
         {% elsif page.profile.image %}

@@ -10,9 +10,6 @@
   --portrait-glass-hover: rgba(35, 39, 34, 0.55);
 
   width: 100%;
-  max-width: 300px;
-  margin-left: auto;
-  padding: 0.75rem 0.6rem 0;
 }
 
 html[data-theme="dark"] .portrait {
@@ -33,11 +30,11 @@ html[data-theme="dark"] .portrait {
   -webkit-tap-highlight-color: transparent;
   cursor: zoom-in;
 
-  // 4:5 frame
+  // Square frame, same as the original single profile photo.
   &::before {
     content: "";
     display: block;
-    padding-top: calc(125% - 5px);
+    padding-top: 100%;
   }
 
   &:focus-visible {
@@ -50,7 +47,7 @@ html[data-theme="dark"] .portrait {
 .portrait-print {
   position: absolute;
   inset: 0;
-  padding: 9px;
+  padding: 0.45rem;
   background: var(--print-paper);
   border: 1px solid var(--global-divider-color);
   border-radius: 5px;
@@ -323,24 +320,6 @@ html[data-theme="dark"] .portrait-viewer::backdrop {
 
     &--next {
       right: calc(50% - 48px);
-    }
-  }
-}
-
-/* Layout inside the about page: replaces the old single-photo figure. */
-.about-page .profile.has-portrait-stack {
-  width: 300px;
-  max-width: 34%;
-
-  @media (max-width: 575.98px) {
-    float: none !important;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 0 1.25rem;
-
-    .portrait {
-      max-width: 280px;
-      margin: 0 auto;
     }
   }
 }
