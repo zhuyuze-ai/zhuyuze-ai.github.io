@@ -63,6 +63,14 @@ on:
 permissions:
   contents: write
 
+# Run deploys one at a time. Without this, two pushes a minute apart start two
+# builds in parallel, and if the older build finishes last it overwrites the
+# site with older content. A queued run is replaced by the newest one, so the
+# last push always wins.
+concurrency:
+  group: deploy-site-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   deploy:
     # available images: https://github.com/actions/runner-images#available-images
