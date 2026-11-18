@@ -1,15 +1,18 @@
 {% comment %}
-  Stacked portrait prints with prev/next arrows, position dots and an
-  expandable viewer. Photos come from page.profile.portraits; the first one
-  is the default (front) photo.
+  Stacked portrait prints with prev/next arrows and position dots. Photos come
+  from page.profile.portraits; the first one is the default (front) photo.
+  Clicking opens the same lightbox the photography page uses (its styles live
+  in _sass/_photography.scss), captioned "date, place" the same way.
 {% endcomment %}
 {% assign portraits = include.portraits %}
 <aside class="portrait" aria-label="Profile photos">
   <div class="portrait-stage">
-    <div class="portrait-stack" role="button" tabindex="0" aria-label="Open portrait">
+    <div class="portrait-stack" role="button" tabindex="0" aria-label="View photo larger">
       {% for p in portraits %}
         {% assign pos = forloop.index0 %}
         {% if pos > 3 %}{% assign pos = 3 %}{% endif %}
+        {% assign caption = p.date | append: ', ' | append: p.place %}
+        {% if p.title %}{% assign caption = p.title | append: ' · ' | append: caption %}{% endif %}
         <span
           class="portrait-print"
           data-position="{{ pos }}"
@@ -22,7 +25,7 @@
             <img
               src="{{ p.image | prepend: 'assets/img/' | relative_url | bust_file_cache }}"
               alt="{{ p.alt }}"
-              data-location="{{ p.location }}"
+              data-caption="{{ caption }}"
               width="1200"
               height="1200"
               draggable="false"
@@ -48,7 +51,7 @@
         </svg>
       </button>
     {% endif %}
-    <button class="portrait-expand" type="button" aria-label="Expand photograph" title="Expand photograph">
+    <button class="portrait-expand" type="button" aria-label="View photo larger" title="View photo larger">
       <svg viewBox="0 0 24 24" aria-hidden="true">
         <path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"></path>
       </svg>
@@ -61,37 +64,16 @@
       {% endfor %}
     </div>
   {% endif %}
-  <dialog class="portrait-viewer" aria-label="Expanded portrait photograph">
-    <div class="portrait-full-frame">
-      <img class="portrait-full-image" alt="" draggable="false">
-      <div class="portrait-full-meta">
-        <strong>
-          {{- site.first_name }}
-          {{ site.last_name -}}
-        </strong>
-        {% if include.caption -%}
-          <span>{{ include.caption }}</span>
-        {%- endif %}
-        <span class="portrait-full-location"></span>
-      </div>
-      {% if portraits.size > 1 %}
-        <button class="portrait-viewer-arrow portrait-viewer-arrow--prev" type="button" aria-label="Previous portrait">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m14 6-6 6 6 6"></path>
-          </svg>
-        </button>
-        <button class="portrait-viewer-arrow portrait-viewer-arrow--next" type="button" aria-label="Next portrait">
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="m10 6 6 6-6 6"></path>
-          </svg>
-        </button>
-      {% endif %}
-      <button class="portrait-close" type="button" aria-label="Close photograph" title="Close photograph">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <path d="m6 6 12 12M18 6 6 18"></path>
-        </svg>
-      </button>
-    </div>
-  </dialog>
+
+  <!-- Same markup as the photography page's lightbox; moved to <body> by the script. -->
+  <div class="photo-lightbox portrait-lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+    <button class="photo-lightbox-close" type="button" aria-label="Close viewer">&times;</button>
+    <button class="photo-lightbox-nav photo-lightbox-prev" type="button" aria-label="Previous photo">&#8249;</button>
+    <figure class="photo-lightbox-figure">
+      <img class="photo-lightbox-img" alt="" draggable="false">
+      <figcaption class="photo-lightbox-caption"></figcaption>
+    </figure>
+    <button class="photo-lightbox-nav photo-lightbox-next" type="button" aria-label="Next photo">&#8250;</button>
+  </div>
 </aside>
 <script defer src="{{ '/assets/js/portrait-stack.js' | relative_url | bust_file_cache }}"></script>

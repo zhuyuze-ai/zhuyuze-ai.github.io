@@ -15,17 +15,21 @@ profile:
   image_circular: false # crops the image to make it circular
 
   # Stacked photo prints; the first one is shown in front by default.
-  viewer_caption: Visiting Student · UC Berkeley
+  # Clicking opens the same viewer as the photography page, captioned
+  # "date, place" like the photos there.
   portraits:
     - image: portraits/beijing.jpg
       alt: Yuze Zhu in sunglasses beneath golden ginkgo trees
-      location: Beijing, China
+      date: November 2024
+      place: Beijing
     - image: portraits/berkeley.jpg
       alt: Yuze Zhu in front of Sather Tower under a blue sky
-      location: Berkeley, California
+      date: September 2026
+      place: UC Berkeley, California
     - image: portraits/hangzhou.jpg
       alt: Yuze Zhu holding a camera up to the face on a school sports field
-      location: Hangzhou No.2 High School, Hangzhou
+      date: October 2021
+      place: Hangzhou No.2 High School, Hangzhou
 
 hero_links:
   - label: Email

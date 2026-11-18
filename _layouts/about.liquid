@@ -38,7 +38,7 @@ layout: default
     {% if page.profile %}
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.portraits %}
-          {% include portrait_stack.liquid portraits=page.profile.portraits caption=page.profile.viewer_caption %}
+          {% include portrait_stack.liquid portraits=page.profile.portraits %}
         {% elsif page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
