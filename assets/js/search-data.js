@@ -9,14 +9,7 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-cv",
-          title: "CV",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
-          },
-        },{id: "nav-photography",
+  },{id: "nav-photography",
           title: "photography",
           description: "Portraits and landscapes, mostly from Beijing and Hangzhou.",
           section: "Navigation",
