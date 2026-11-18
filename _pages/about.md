@@ -26,6 +26,10 @@ profile:
       alt: Yuze Zhu in front of Sather Tower under a blue sky
       date: September 2026
       place: UC Berkeley, California
+    - image: portraits/olympic.jpg
+      alt: Yuze Zhu seated on fallen ginkgo leaves with a camera in autumn
+      date: November 2023
+      place: Olympic Forest Park, Beijing
     - image: portraits/hangzhou.jpg
       alt: Yuze Zhu holding a camera up to the face on a school sports field
       date: October 2021
