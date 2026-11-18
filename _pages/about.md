@@ -36,6 +36,11 @@ profile:
       place: Hangzhou No.2 High School, Hangzhou
 
 hero_links:
+  - label: CV
+    icon: ai ai-cv
+    url: /assets/pdf/Yuze_Zhu_CV.pdf
+    external: true
+
   - label: Email
     icon: fas fa-envelope
     url: mailto:yuzezhu141@gmail.com
