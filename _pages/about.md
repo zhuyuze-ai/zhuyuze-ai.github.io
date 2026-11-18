@@ -10,9 +10,22 @@ subtitle: Visiting Student, <a href='https://eecs.berkeley.edu/'>Computer Scienc
 profile:
   align: right
 
-  image: prof_pic.jpg
+  image: prof_pic.jpg # fallback when `portraits` is empty
 
   image_circular: false # crops the image to make it circular
+
+  # Stacked photo prints; the first one is shown in front by default.
+  viewer_caption: Visiting Student · UC Berkeley
+  portraits:
+    - image: portraits/beijing.jpg
+      alt: Yuze Zhu in sunglasses beneath golden ginkgo trees
+      location: Beijing, China
+    - image: portraits/berkeley.jpg
+      alt: Yuze Zhu in front of Sather Tower under a blue sky
+      location: Berkeley, California
+    - image: portraits/hangzhou.jpg
+      alt: Yuze Zhu holding a camera up to the face on a school sports field
+      location: Hangzhou No.2 High School, Hangzhou
 
 hero_links:
   - label: Email

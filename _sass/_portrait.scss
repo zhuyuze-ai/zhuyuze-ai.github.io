@@ -1,0 +1,353 @@
+/* ---------------------------------------------------------------------------
+ * Stacked portrait prints (about page). The front print sits flat; the ones
+ * behind fan out slightly, like photo prints on a desk. Arrows cycle the
+ * stack; clicking opens a modal viewer.
+ * ------------------------------------------------------------------------- */
+.portrait {
+  --print-paper: #fffdfa;
+  --print-shadow: 0 2px 5px rgba(55, 38, 24, 0.05), 0 16px 32px -15px rgba(55, 38, 24, 0.28);
+  --portrait-glass: rgba(35, 39, 34, 0.35);
+  --portrait-glass-hover: rgba(35, 39, 34, 0.55);
+
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  padding: 0.75rem 0.6rem 0;
+}
+
+html[data-theme="dark"] .portrait {
+  --print-paper: var(--global-card-bg-color);
+  --print-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 16px 32px -15px rgba(0, 0, 0, 0.6);
+}
+
+.portrait-stage {
+  position: relative;
+}
+
+.portrait-stack {
+  position: relative;
+  display: block;
+  width: 100%;
+  isolation: isolate;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+  cursor: zoom-in;
+
+  // 4:5 frame
+  &::before {
+    content: "";
+    display: block;
+    padding-top: calc(125% - 5px);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 12px;
+    border-radius: 5px;
+  }
+}
+
+.portrait-print {
+  position: absolute;
+  inset: 0;
+  padding: 9px;
+  background: var(--print-paper);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 5px;
+  box-shadow: var(--print-shadow);
+  transform-origin: 50% 85%;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+
+  &[data-position="0"] {
+    z-index: 4;
+    transform: none;
+  }
+
+  &[data-position="1"] {
+    z-index: 3;
+    transform: translate(9px, 1px) rotate(3deg) scale(0.97);
+  }
+
+  &[data-position="2"] {
+    z-index: 2;
+    transform: translate(-8px, 1px) rotate(-3deg) scale(0.95);
+  }
+
+  &[data-position="3"] {
+    z-index: 1;
+    transform: translateY(7px) scale(0.95);
+  }
+}
+
+.portrait-window {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 2px;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    user-select: none;
+  }
+}
+
+// Beat the old `.about-page .profile img` rounded-photo rule.
+.about-page .profile .portrait img {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+%portrait-glass-button {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: #fff;
+  cursor: pointer;
+  background: var(--portrait-glass);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+  backdrop-filter: blur(12px) saturate(1.2);
+  -webkit-backdrop-filter: blur(12px) saturate(1.2);
+  box-shadow:
+    inset 0 1px rgba(255, 255, 255, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    background 0.18s,
+    opacity 0.18s;
+
+  &:hover {
+    background: var(--portrait-glass-hover);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-theme-color);
+    outline-offset: 3px;
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+}
+
+.portrait-arrow {
+  @extend %portrait-glass-button;
+  position: absolute;
+  top: 50%;
+  z-index: 6;
+  width: 34px;
+  height: 34px;
+  transform: translateY(-50%);
+
+  &--prev {
+    left: 10px;
+  }
+
+  &--next {
+    right: 10px;
+  }
+}
+
+.portrait-expand {
+  @extend %portrait-glass-button;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 6;
+  width: 34px;
+  height: 34px;
+  opacity: 0.7;
+}
+
+.portrait-stage:hover .portrait-expand,
+.portrait-expand:focus-visible {
+  opacity: 1;
+}
+
+.portrait-dots {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 1.1rem 0 0.75rem;
+}
+
+.portrait-dot {
+  width: 4px;
+  height: 4px;
+  background: color-mix(in srgb, var(--global-text-color) 22%, transparent);
+  border-radius: 999px;
+  transition:
+    width 0.25s,
+    background 0.25s;
+
+  &.is-current {
+    width: 13px;
+    background: var(--global-theme-color);
+  }
+}
+
+/* Viewer --------------------------------------------------------------- */
+html.portrait-viewer-open {
+  overflow: hidden;
+}
+
+.portrait-viewer {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+
+  &::backdrop {
+    background: rgba(232, 241, 248, 0.72);
+    backdrop-filter: blur(18px) saturate(0.85);
+    -webkit-backdrop-filter: blur(18px) saturate(0.85);
+  }
+}
+
+html[data-theme="dark"] .portrait-viewer::backdrop {
+  background: rgba(10, 12, 16, 0.72);
+}
+
+.portrait-full-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 350px;
+  overflow: hidden;
+  background: var(--print-paper);
+  border-radius: 3px;
+  outline: 9px solid var(--print-paper);
+  box-shadow:
+    0 0 0 10px rgba(255, 255, 255, 0.55),
+    0 26px 80px -15px rgba(61, 49, 42, 0.28);
+  will-change: left, top, width, height;
+}
+
+.portrait-full-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  user-select: none;
+  background: #111;
+}
+
+.portrait-full-meta {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: grid;
+  gap: 0.2rem;
+  padding: 1.75rem 0.85rem 0.75rem;
+  color: #fff;
+  pointer-events: none;
+  background: linear-gradient(transparent 0%, rgba(20, 22, 20, 0.35) 45%, rgba(20, 22, 20, 0.78) 100%);
+
+  strong {
+    font-size: 0.95rem;
+  }
+
+  span {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.82);
+  }
+}
+
+.portrait-close,
+.portrait-viewer-arrow {
+  @extend %portrait-glass-button;
+  position: absolute;
+  z-index: 2;
+  width: 36px;
+  height: 36px;
+}
+
+.portrait-close {
+  top: 10px;
+  right: 10px;
+}
+
+.portrait-viewer-arrow {
+  top: 50%;
+  transform: translateY(-50%);
+
+  &--prev {
+    left: 10px;
+  }
+
+  &--next {
+    right: 10px;
+  }
+}
+
+.portrait-viewer.is-transitioning {
+  .portrait-close,
+  .portrait-viewer-arrow,
+  .portrait-full-meta {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .portrait-viewer-arrow {
+    top: auto;
+    bottom: 10px;
+    transform: none;
+
+    &--prev {
+      left: calc(50% - 48px);
+    }
+
+    &--next {
+      right: calc(50% - 48px);
+    }
+  }
+}
+
+/* Layout inside the about page: replaces the old single-photo figure. */
+.about-page .profile.has-portrait-stack {
+  width: 300px;
+  max-width: 34%;
+
+  @media (max-width: 575.98px) {
+    float: none !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 0 1.25rem;
+
+    .portrait {
+      max-width: 280px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portrait-print,
+  .portrait-dot {
+    transition: none;
+  }
+}
