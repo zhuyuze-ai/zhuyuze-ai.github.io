@@ -48,11 +48,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). I am currently a visiting student at UC Berkeley, working at [Berkeley AI Research (BAIR)](https://bair.berkeley.edu/), advised by [Roei Herzig](https://roeiherz.github.io/).
+I am a fourth-year undergraduate student at the School of Artificial Intelligence, University of Chinese Academy of Sciences (UCAS). I am currently a visiting student at UC Berkeley, working at [Berkeley AI Research (BAIR)](https://bair.berkeley.edu/), advised by [Trevor Darrell](https://people.eecs.berkeley.edu/~trevor/) and [Roei Herzig](https://roeiherz.github.io/).
 
-My long-term goal is to build general-purpose robots that understand and interact with the physical world. I am particularly interested in **representation learning** and **spatial intelligence**, studying how robots can develop an intuitive understanding of 3D space to support robust generalization across tasks and environments. I am currently **seeking a PhD position starting in Fall 2027**, and am happy to discuss potential research fit and collaboration opportunities.
+My long-term goal is to develop robots with **physical and action intuition**, enabling fast and precise manipulation through System 1. I am interested in learning **spatially grounded representations** of 3D structure, physical dynamics, and action, and bridging these capabilities with System 2 reasoning and planning to enable generalization across tasks and environments. I am currently **seeking a PhD position starting in Fall 2027**, and am happy to discuss potential research fit and collaboration opportunities.
 
-Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**, I spent three years in **Beijing** for my studies and am now based in **Berkeley, California**, and I always enjoy meeting friends from around the world. If you would like to chat about research, daily life, or anything culturally Chinese, please feel free to [reach out](mailto:yuzezhu141@gmail.com). Emails from anywhere are warmly welcome!
+Beyond research, I am a passionate photographer. I grew up in **Hangzhou**, spent three years studying in **Beijing**, and am currently based in **Berkeley, California**. I enjoy meeting people from different cultures and making friends around the world. If you would like to chat about research, daily life, or anything related to Chinese culture, please feel free to [reach out](mailto:yuzezhu141@gmail.com). Emails from anywhere are warmly welcome!
 
 <div class="section-head">
   <h2 class="home-section-title" id="experience">Experience</h2>
@@ -69,7 +69,7 @@ Beyond research, I am a passionate photographer. Born and raised in **Hangzhou**
         <h3 class="exp-title"><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">Berkeley AI Research (BAIR)</a> &middot; UC Berkeley</h3>
         <span class="exp-date">Aug 2026 - Present</span>
       </div>
-      <div class="exp-meta">Berkeley, California &middot; Visiting Student &middot; Advised by <a href="https://roeiherz.github.io/" target="_blank" rel="noopener">Roei Herzig</a> (Darrell Group)</div>
+      <div class="exp-meta">Berkeley, California &middot; Visiting Student &middot; Advised by <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank" rel="noopener">Trevor Darrell</a> and <a href="https://roeiherz.github.io/" target="_blank" rel="noopener">Roei Herzig</a></div>
       <p class="exp-desc">
         Investigating learned representations in <strong>World Action Models (WAMs)</strong>, with a focus on how task-relevant information emerges and supports generalization and adaptation in robotic manipulation. Also exploring <strong>human-video in-context learning</strong>, studying how representations from demonstrations can be aligned with the robot's current state to guide future video and action generation.
       </p>
