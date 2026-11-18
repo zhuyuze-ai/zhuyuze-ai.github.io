@@ -36,23 +36,23 @@ profile:
       place: Hangzhou No.2 High School, Hangzhou
 
 hero_links:
-  - label: CV
-    icon: ai ai-cv
-    url: /assets/pdf/Yuze_Zhu_CV.pdf
-    external: true
-
   - label: Email
     icon: fas fa-envelope
     url: mailto:yuzezhu141@gmail.com
 
-  - label: GitHub
-    icon: fab fa-github
-    url: https://github.com/sunrise-yuze
+  - label: CV
+    icon: fas fa-file-lines
+    url: /assets/pdf/Yuze_Zhu_CV.pdf
     external: true
 
   - label: Google Scholar
     icon: ai ai-google-scholar
     url: https://scholar.google.com/citations?user=xCZdP8wAAAAJ&hl=en
+    external: true
+
+  - label: GitHub
+    icon: fab fa-github
+    url: https://github.com/sunrise-yuze
     external: true
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
