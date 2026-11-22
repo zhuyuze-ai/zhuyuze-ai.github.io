@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my internship at FiveAges (中科第五纪) as an Embodied AI Algorithm Intern.
+Started my internship at FiveAges (中科第五纪) as an Embodied AI Research Intern.
