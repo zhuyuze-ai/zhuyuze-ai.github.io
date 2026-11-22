@@ -111,7 +111,7 @@ Beyond research, I am a passionate photographer. I grew up in **Hangzhou**, spen
         <h3 class="exp-title">FiveAges (Embodied AI Startup) &amp; CASIA</h3>
         <span class="exp-date">Mar 2026 - Aug 2026</span>
       </div>
-      <div class="exp-meta">Beijing, China &middot; Algorithm Intern &middot; Advised by <a href="https://yanrockhuang.github.io/" target="_blank" rel="noopener">Yan Huang</a> and Liang Wang</div>
+      <div class="exp-meta">Beijing, China &middot; Research Intern &middot; Advised by <a href="https://yanrockhuang.github.io/" target="_blank" rel="noopener">Yan Huang</a> and Liang Wang</div>
       <p class="exp-desc">
         Co-developed <strong>BridgeVLA++</strong>, a memory-augmented Vision-Language-Action framework for generalizable 3D manipulation, and led its simulation and real-robot evaluation; co-first-authored the manuscript <strong>submitted to IEEE TPAMI</strong>.
       </p>
