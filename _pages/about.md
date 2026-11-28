@@ -95,9 +95,9 @@ Beyond research, I am a passionate photographer. I grew up in **Hangzhou**, spen
         <h3 class="exp-title"><a href="https://bair.berkeley.edu/" target="_blank" rel="noopener">Berkeley AI Research (BAIR)</a> &middot; UC Berkeley</h3>
         <span class="exp-date">Aug 2026 - Present</span>
       </div>
-      <div class="exp-meta">Berkeley, California &middot; Visiting Student &middot; Advised by <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank" rel="noopener">Trevor Darrell</a> and <a href="https://roeiherz.github.io/" target="_blank" rel="noopener">Roei Herzig</a></div>
+      <div class="exp-meta">Berkeley, California &middot; Visiting Undergraduate Researcher &middot; Advised by <a href="https://people.eecs.berkeley.edu/~trevor/" target="_blank" rel="noopener">Trevor Darrell</a> and <a href="https://roeiherz.github.io/" target="_blank" rel="noopener">Roei Herzig</a></div>
       <p class="exp-desc">
-        Investigating learned representations in <strong>World Action Models (WAMs)</strong>, with a focus on how task-relevant information emerges and supports generalization and adaptation in robotic manipulation. Also exploring <strong>human-video in-context learning</strong>, studying how representations from demonstrations can be aligned with the robot's current state to guide future video and action generation.
+        Proposed <strong>HeadLight</strong>, an attention-head-level analysis and adaptation framework that identifies two families of functionally specialized heads in <strong>World-Action Models (WAMs)</strong>, for interaction targeting and motion modeling. Developed a targeted adaptation method based on these heads that outperforms full fine-tuning and LoRA in manipulation generalization. Led the project from initial exploration through manuscript submission, coordinating collaborators, cross-architecture experiments, and real-robot evaluations; <strong>first-authored</strong> the manuscript, currently under review.
       </p>
     </div>
   </article>
@@ -113,7 +113,7 @@ Beyond research, I am a passionate photographer. I grew up in **Hangzhou**, spen
       </div>
       <div class="exp-meta">Beijing, China &middot; Research Intern &middot; Advised by <a href="https://yanrockhuang.github.io/" target="_blank" rel="noopener">Yan Huang</a> and Liang Wang</div>
       <p class="exp-desc">
-        Co-developed <strong>BridgeVLA++</strong>, a memory-augmented Vision-Language-Action framework for generalizable 3D manipulation, and led its simulation and real-robot evaluation; co-first-authored the manuscript <strong>submitted to IEEE TPAMI</strong>.
+        Led the design and implementation of <strong>BridgeVLA++</strong>'s spatio-temporal memory: spatial memory for recovering geometrically aligned scene context under occlusion, and temporal memory integrating initial-scene references, recent interactions, and long-term sub-goals. Conducted simulation and real-robot evaluations, demonstrating state-of-the-art performance across five manipulation benchmarks; co-first-authored the manuscript, <strong>under review at IEEE TPAMI</strong>. Also co-developed <strong>M3D-VLA</strong>, contributing to its spatially grounded memory architecture and real-robot validation for history-aware manipulation (second author).
       </p>
     </div>
   </article>
@@ -131,7 +131,7 @@ Beyond research, I am a passionate photographer. I grew up in **Hangzhou**, spen
       </div>
       <div class="exp-meta">Beijing, China &middot; Research Intern &middot; Advised by Junyu Gao and Changsheng Xu</div>
       <p class="exp-desc">
-        Developed a closed-loop self-correction framework for continuous <strong>Vision-Language Navigation (VLN)</strong> using world-model foresight and environmental feedback, and led the experimental implementation and evaluation on R2R-CE and RxR-CE; resulted in a second-author paper <strong>accepted at ICML 2026</strong>.
+        Co-developed <strong>SC&sup2;-WM</strong>, a self-correcting world model for closed-loop <strong>Vision-and-Language Navigation</strong> with foresight-guided feedback. Proposed the core idea of leveraging next-step environmental observations as self-supervised signals for online world-model adaptation at test time, and conducted the majority of simulation experiments, validating navigation performance and generalization in unseen environments; resulted in a second-author paper at <strong>ICML 2026</strong>.
       </p>
     </div>
   </article>
